@@ -1,5 +1,7 @@
 /* Window Draggable */
 $( ".window" ).draggable({ cancel: ".window-content,input,textarea" });
+$( ".window" ).toggleClass('hidden');
+
 
 $(function () {
   
