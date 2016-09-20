@@ -3,14 +3,18 @@ $( ".window" ).draggable({ cancel: ".window-content,input,textarea" });
 $( ".window" ).toggleClass('hidden');
 
 
-$(function () {
-  
-  var $button = $('#finder');
-  var $container = $('.window');
-  
-  var buttonHeight = $button.height();
+function attach_button_with_window(button, container){
+
+	var $button = $(button);
+  var $container = $(container);
+
+	var buttonHeight = $button.height();
   var buttonWidth = $button.width();
   
+  $(container).find(".close").on('click', function(){
+  	$(container).toggleClass('hidden');
+  });
+
   $button.on('click', function () {
     
     var buttonOffset = $button.offset();
@@ -28,5 +32,17 @@ $(function () {
           transformOrigin: origin  
         })
         .toggleClass('hidden');
+        
   });
+
+}
+
+$(function () {
+  
+	attach_button_with_window("#cultural_icon", "#cultural");
+	attach_button_with_window("#tech_icon", "#tech");
+	attach_button_with_window("#sports_icon", "#sports");
+	attach_button_with_window("#about_icon", "#about");
+  
+  
 });
