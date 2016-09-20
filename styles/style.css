@@ -173,14 +173,6 @@ html {
   box-sizing: inherit;
 }
 
-body { font:14px/1.6 'Helvetica Neue', Arial,
-  STHeiti,
-  'Microsoft Yahei', 
-  'WenQuanYi Micro Hei',
-  sans-serif;
-  background:  url(http://images.macx.cn/forum/201406/03/04212243jm2kktxjje3e3k.jpg) 0 0 no-repeat;
-}
-
 .window{
   width: 660px;
   margin-left: auto;
