@@ -43,6 +43,6 @@ $(function () {
 	attach_button_with_window("#tech_icon", "#tech");
 	attach_button_with_window("#sports_icon", "#sports");
 	attach_button_with_window("#about_icon", "#about");
-  
+    
   
 });
