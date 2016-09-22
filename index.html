@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Breeze 2016</title>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -11,6 +12,7 @@
         <link rel="stylesheet" href="css/style.css">	
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.6/phaser.min.js"></script>
 
 </head>
 <body>
@@ -41,13 +43,14 @@
 	    <img src="http://www.macupdate.com/images/icons256/51758.png"/>
 	    <div class="dot"></div>
 	  </div>
+	  <!--<div class="base"></div>-->
 	</nav>
 	
 	<div id="logo">
 		<img src="static/images/breeze-white.png" width="450px">
 	</div>
 
-	<div id="cultural" class="window">
+	<div id="cultural" class="window hidden">
 	  <div class="header">
 	    <div class="top-bar">
 	      <div class="controls">
@@ -60,54 +63,50 @@
 		
 	  <div class="window-content">
 		<div class="cardcontainer">
-            <div class="card">
-              Dance
+            <div id="Dance" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Music
+            <div id="Music" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Dramatics
+            <div id="Dramatics" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Quizzing
+            <div id="Quizzing" class="card">
+              
+            </div>
+        </div>
+        
+        <div class="cardcontainer">
+            <div id="Literature" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Puzzle
+            <div id="ArtandCreativity" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Literature
+            <div id="Business" class="card">
+              
             </div>
         </div>
         <div class="cardcontainer">
-            <div class="card">
-              Art and Creativity
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div class="card">
-              Fashion
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div class="card">
-              MUN
+            <div id="MUN" class="card">
+              
             </div>
         </div>
 	  </div>
 	</div>
 
-	<div id="tech" class="window">
+	<div id="tech" class="window hidden">
 	  <div class="header">
 	    <div class="top-bar">
 	      <div class="controls">
@@ -119,11 +118,11 @@
 	  </div>
 		
 	  <div class="window-content">
-				<img src="static/images/fruit_demo.png" width="100%">
+				<div id="game"></div>
 	  </div>
 	</div>	
 
-	<div id="sports" class="window">
+	<div id="sports" class="window hidden">
 	  <div class="header">
 	    <div class="top-bar">
 	      <div class="controls">
@@ -139,7 +138,7 @@
 	  </div>
 	</div>	
 
-	<div id="about" class="window">
+	<div id="about" class="window hidden">
 	  <div class="header">
 	    <div class="top-bar">
 	      <div class="controls">

@@ -14,7 +14,7 @@ nav {
   width: 420px;*/
   box-sizing: border-box;
   padding: 4px;
-  background: #53706D;
+  /*background: #53706D;*/
   transform: translateX(-50%);
   border-radius: 5px 5px 0 0;
 }
@@ -37,13 +37,24 @@ nav .icon {
   width: 60px;
   height: 60px;
   border: none;
-  transition: 0.5s;
+  -webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+  transition: all 2s;
+}
+
+nav .icon:hover {
+  width: 75px;
+  height: 75px;
 }
 
 nav img {
   width: 60px;
   height: 60px;
   transition: 0.5s;
+}
+
+nav img:hover {
+  width: 75px;
+  height: 75px;
 }
 
 nav label {
@@ -62,6 +73,25 @@ nav label {
   opacity: 0;
   z-index: 100;
   display: none;
+}
+
+nav .base{
+	
+	bottom: 0px;
+	height: 45px;
+	z-index: -10;
+	background-color: #888;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #333, #999); 
+	background-image: -moz-linear-gradient(top, #333, #999); /* Gradient works on FF 3.6+ */
+	opacity: .5;
+	border-bottom: 2px #aaa solid;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-transform: rotateX(55deg); /* 3d - works on webkit only */
+	-moz-transform-origin: 50% 100%;
+	-moz-transform: rotateX(55deg); /* not supported on current 3.7 */
+	-o-transform-origin: 50% 100%;
+	-o-transform: rotateX(55deg);
 }
 
 nav label::before,
@@ -183,13 +213,15 @@ html {
   margin-left: auto;
   margin-right: auto;
   
-  border-radius: 0 0 6px 6px;
+  border-radius: 6px 6px 6px 6px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, .5);  
   -ms-transition: transform 0.10s;
   -webkit-transition: transform 0.10s;
   -moz-transition: transform 0.10s;
   transition: transform 0.10s;
+
+  background: #ececec;
 }
 .window.hidden {
   -ms-transform: scale(0) perspective(370px) rotateX(50deg);
@@ -224,6 +256,10 @@ html {
 .window .header .title {
   cursor: default;
   user-select: none;
+}
+
+#cultural{
+  height: 72%;
 }
 
 .controls {
@@ -284,13 +320,12 @@ html {
 }
 
 .window-content{
-  height: 91%;
+  height: calc(100% - 38px);
   width: 100%;
   overflow: scroll;
   color: #fff;
   border-radius: 0 0 6px 6px;
   font-family: Monaco, MonoSpace;
-  background: #ececec;
 }
 
 .column {
@@ -342,7 +377,13 @@ html {
 
 /* Card CSS */
 
+#cultural .window-content{
+	background: url("../static/images/pool_table.png") repeat;
+}
+
+
 .cardcontainer {
+  
   float: left;
   width: 150px;
   height: 225px;
@@ -354,9 +395,11 @@ html {
   padding: 5px;
   margin: 2px;
 }
+
+
 .card {
   
-  background: #fff;
+  background: url("../static/images/solitaire/quizCard.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -367,7 +410,7 @@ html {
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 6px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  /*box-shadow: 0 6px 16px rgba(0,0,0,0.15); */
   cursor: pointer;
 }
 .card div {
@@ -409,8 +452,9 @@ html {
 
 ::-webkit-scrollbar {
   width: 8px; /* 1px wider than Lion. */
+  height: 8px;
   /* This is more usable for users trying to click it. */
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(135,135,135,0.3);
   -webkit-border-radius: 100px;
 }
 /* hover effect for both scrollbar area, and scrollbar 'thumb' */
@@ -428,5 +472,39 @@ html {
 ::-webkit-scrollbar-thumb:vertical:active {
   background: rgba(0,0,0,0.61); /* Some darker color when you click it */
   -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar-corner { background: rgba(135,135,135,0.3); }
+
+/* Game */
+
+#game {
+	width: inherit;
+	height: inherit;
+}
+
+#Dance{
+  background: url("../static/images/solitaire/danceCard.png");
+}
+#Music{
+  background: url("../static/images/solitaire/musicCard.png");
+}
+#Dramatics{
+  background: url("../static/images/solitaire/dramaticCard.png");
+}
+#Quizzing{
+  background: url("../static/images/solitaire/quizCard.png");
+}
+#Literature{
+  background: url("../static/images/solitaire/literaryCard.png");
+}
+#ArtandCreativity{
+  background: url("../static/images/solitaire/artCard.png");
+}
+#Business{
+  background: url("../static/images/solitaire/businessCard.png");
+}
+#MUN{
+  background: url("../static/images/solitaire/munCard.png");
 }
 
