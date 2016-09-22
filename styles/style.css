@@ -14,7 +14,7 @@ nav {
   width: 420px;*/
   box-sizing: border-box;
   padding: 4px;
-  background: #53706D;
+  /*background: #53706D;*/
   transform: translateX(-50%);
   border-radius: 5px 5px 0 0;
 }
@@ -37,13 +37,24 @@ nav .icon {
   width: 60px;
   height: 60px;
   border: none;
-  transition: 0.5s;
+  -webkit-transition: all 2s; /* For Safari 3.1 to 6.0 */
+  transition: all 2s;
+}
+
+nav .icon:hover {
+  width: 75px;
+  height: 75px;
 }
 
 nav img {
   width: 60px;
   height: 60px;
   transition: 0.5s;
+}
+
+nav img:hover {
+  width: 75px;
+  height: 75px;
 }
 
 nav label {
@@ -62,6 +73,25 @@ nav label {
   opacity: 0;
   z-index: 100;
   display: none;
+}
+
+nav .base{
+	
+	bottom: 0px;
+	height: 45px;
+	z-index: -10;
+	background-color: #888;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#ccc));
+	background-image: -webkit-linear-gradient(top, #333, #999); 
+	background-image: -moz-linear-gradient(top, #333, #999); /* Gradient works on FF 3.6+ */
+	opacity: .5;
+	border-bottom: 2px #aaa solid;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-transform: rotateX(55deg); /* 3d - works on webkit only */
+	-moz-transform-origin: 50% 100%;
+	-moz-transform: rotateX(55deg); /* not supported on current 3.7 */
+	-o-transform-origin: 50% 100%;
+	-o-transform: rotateX(55deg);
 }
 
 nav label::before,
@@ -343,6 +373,10 @@ html {
 
 /* Card CSS */
 
+#cultural .window-content{
+	background: url("../static/images/pool_table.png") repeat;
+}
+
 .cardcontainer {
   float: left;
   width: 150px;
@@ -355,6 +389,8 @@ html {
   padding: 5px;
   margin: 2px;
 }
+
+
 .card {
   
   background: #fff;
