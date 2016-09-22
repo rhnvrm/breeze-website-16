@@ -48,3 +48,50 @@ $(function () {
     
   
 });
+
+
+
+var w = $("#tech").innerWidth(),
+		h = $("#tech").innerHeight();
+
+var game = new Phaser.Game(w, h, Phaser.AUTO, 'game',
+		{ create: create, update: update, render: render });
+
+var slashes,
+		points = [];	
+
+var fireRate = 1000;
+var nextFire = 0;
+
+
+function create() {
+
+	game.physics.startSystem(Phaser.Physics.ARCADE);
+
+	slashes = game.add.graphics(0, 0);
+}
+
+function update() {
+
+	points.push({
+			x: game.input.x,
+			y: game.input.y
+		});
+
+	points = points.splice(points.length-10, points.length);
+
+
+	slashes.clear();
+	slashes.beginFill(0xFFFFFF);
+	slashes.alpha = .5;
+	slashes.moveTo(points[0].x, points[0].y);
+	for (var i=1; i<points.length; i++) {
+		slashes.lineTo(points[i].x, points[i].y);
+	} 
+	slashes.endFill();
+
+}
+
+
+function render() {
+}
