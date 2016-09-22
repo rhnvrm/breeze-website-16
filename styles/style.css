@@ -414,7 +414,7 @@ html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 6px;
-  background: #fff;
+  background: url("../static/images/solitaire/quizCard.png");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -470,3 +470,9 @@ html {
 
 ::-webkit-scrollbar-corner { background: rgba(135,135,135,0.3); }
 
+/* Game */
+
+#game {
+	width: inherit;
+	height: inherit;
+}
