@@ -414,7 +414,7 @@ html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 6px;
-  background: #fff;
+  background: url("../static/images/solitaire/quizCard.png");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
