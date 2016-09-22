@@ -1,6 +1,6 @@
 /* Window Draggable */
 $( ".window" ).draggable({ cancel: ".window-content,input,textarea" });
-$( ".window" ).toggleClass('hidden');
+
 
 
 function attach_button_with_window(button, container){
