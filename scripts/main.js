@@ -55,19 +55,22 @@ var w = $("#tech").innerWidth(),
 		h = $("#tech").innerHeight();
 
 var game = new Phaser.Game(w, h, Phaser.AUTO, 'game',
-		{ create: create, update: update, render: render });
+		{ preload: preload, create: create, update: update, render: render });
 
 var slashes,
 		points = [];	
+ 
+function preload() {
 
-var fireRate = 1000;
-var nextFire = 0;
+	game.load.image("background", "../static/images/fruit_demo.png");
+
+}
 
 
 function create() {
 
 	game.physics.startSystem(Phaser.Physics.ARCADE);
-
+	game.add.tileSprite(0, 0, w, h, 'background');
 	slashes = game.add.graphics(0, 0);
 }
 
