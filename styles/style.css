@@ -1,6 +1,7 @@
 html { 
   background: url(../static/images/wallpaper_2.jpg) no-repeat center center fixed; 
   background-size: cover;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 /* Dock Code https://codepen.io/PageOnline/pen/JhoFb */
@@ -249,7 +250,7 @@ html {
   border-color: #de4643;
 }
 .controls .close:after {
-  content: '×';
+  content: 'x';
   font-size: 13px;
   color: #800200;
   line-height: 7px;
@@ -263,7 +264,7 @@ html {
 }
 
 .controls .minify:after{
-  content: '';
+  content: '-';
   height: 2px;
   width: 8px;
   background-color: #995700;
@@ -334,3 +335,4 @@ html {
 #logo img {
 	filter: drop-shadow(5px 5px 5px #222);
 }
+
