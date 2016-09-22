@@ -15,6 +15,10 @@ function attach_button_with_window(button, container){
   	$(container).toggleClass('hidden');
   });
 
+  $(container).find(".minify").on('click', function(){
+  	$(container).toggleClass('hidden');
+  });
+
   $button.on('click', function () {
     
     var buttonOffset = $button.offset();
@@ -24,8 +28,6 @@ function attach_button_with_window(button, container){
     var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
     
     var origin = -diffX + 'px ' + -diffY + 'px';
-    
-    console.log(origin);
     
     $container
         .css({
