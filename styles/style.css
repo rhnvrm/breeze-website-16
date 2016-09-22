@@ -190,6 +190,8 @@ html {
   -webkit-transition: transform 0.10s;
   -moz-transition: transform 0.10s;
   transition: transform 0.10s;
+
+  background: #ececec;
 }
 .window.hidden {
   -ms-transform: scale(0) perspective(370px) rotateX(50deg);
@@ -284,13 +286,12 @@ html {
 }
 
 .window-content{
-  height: 91%;
+  height: 93%;
   width: 100%;
   overflow: scroll;
   color: #fff;
   border-radius: 0 0 6px 6px;
   font-family: Monaco, MonoSpace;
-  background: #ececec;
 }
 
 .column {
