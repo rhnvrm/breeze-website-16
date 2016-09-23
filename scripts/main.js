@@ -39,13 +39,19 @@ function attach_button_with_window(button, container){
 
 }
 
+$(".menubar li").on('mouseover', function(){
+	console.log($(this).children("sublist").css('visibility', 'visible'));
+});
+
+
 $(function () {
   
 	attach_button_with_window("#cultural_icon", "#cultural");
 	attach_button_with_window("#tech_icon", "#tech");
 	attach_button_with_window("#sports_icon", "#sports");
 	attach_button_with_window("#about_icon", "#about");
-    
+
+
   
 });
 
@@ -247,3 +253,5 @@ function render() {
     ctx.clearRect(0, 0, width, height);
   };
 })();
+
+
