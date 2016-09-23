@@ -11,6 +11,7 @@ function attach_button_with_window(button, container){
 	var buttonHeight = $button.height();
   var buttonWidth = $button.width();
   
+  
   $(container).find(".close").on('click', function(){
   	$(container).toggleClass('hidden');
   });
@@ -18,7 +19,36 @@ function attach_button_with_window(button, container){
   $(container).find(".minify").on('click', function(){
   	$(container).toggleClass('hidden');
   });
+  
 
+  $button.on('click', function () {
+    
+    var buttonOffset = $button.offset();
+    var containerOffset = $container.offset();
+    
+    var diffX = containerOffset.left - buttonOffset.left - buttonWidth*0.5;
+    var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
+    
+    var origin = -diffX + 'px ' + -diffY + 'px';
+    
+    $container
+        .css({
+          transformOrigin: origin  
+        })
+        .toggleClass('hidden');
+        
+  });
+
+}
+
+function attach_menubutton_with_window(button, container){
+
+	var $button = $(button);
+  var $container = $(container);
+
+	var buttonHeight = $button.height();
+  var buttonWidth = $button.width();
+  
   $button.on('click', function () {
     
     var buttonOffset = $button.offset();
@@ -69,10 +99,14 @@ function add_content_from_markdown(id, file){
 
 $(function () {
   
-		attach_button_with_window("#cultural_icon", "#cultural");
-		attach_button_with_window("#tech_icon", "#tech");
-		attach_button_with_window("#sports_icon", "#sports");
-		attach_button_with_window("#about_icon", "#about");
+    attach_button_with_window("#cultural_icon", "#cultural");
+    attach_menubutton_with_window("#menuitem_cultural", "#cultural");
+	attach_button_with_window("#tech_icon", "#tech");
+    attach_menubutton_with_window("#menuitem_technical", "#tech");
+    attach_button_with_window("#sports_icon", "#sports");
+    attach_menubutton_with_window("#menuitem_sports", "#sports");
+	attach_button_with_window("#about_icon", "#about"); 
+    attach_menubutton_with_window("#menuitem_about", "#about");
     attach_button_with_window("#Music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
     attach_button_with_window("#Dramatics", "#dramaevents");
