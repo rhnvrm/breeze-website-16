@@ -83,7 +83,7 @@ var slashes,
  
 function preload() {
 
-	game.load.image("background", "../static/images/fruitNinjaBG.png");
+	game.load.image("background", "static/images/fruitNinjaBG.png");
 
 }
 
@@ -138,7 +138,7 @@ function render() {
 
   window.requestAnimationFrame = requestAnimationFrame;
 
-  img.src = '../static/images/breeze-white-small.png';
+  img.src = 'static/images/breeze-white-small.png';
   img.onload = function() {
     init();
     glitchAnimation();
