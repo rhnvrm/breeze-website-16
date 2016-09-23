@@ -1,5 +1,5 @@
 /* Window Draggable */
-$( ".window" ).draggable({ cancel: ".window-content,input,textarea" });
+$( ".window" ).draggable({ cancel: ".window-content,input,textarea", containment: "parent" });
 
 
 

@@ -4,6 +4,14 @@ html {
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
+.desktop {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+}
+
 /* Dock Code https://codepen.io/PageOnline/pen/JhoFb */
 
 nav {
