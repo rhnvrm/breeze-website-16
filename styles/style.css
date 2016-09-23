@@ -215,8 +215,8 @@ html {
 
 .window{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 7%;
+	left: 25%;
   height: 66%;
   width: 50%;
   margin-left: auto;
@@ -405,6 +405,20 @@ html {
   margin: 2px;
 }
 
+.eventcardcontainer {
+  
+  float: left;
+  width: 448px;
+  height: 98%;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 2px;
+}
+
 
 .card {
   
@@ -581,4 +595,60 @@ html {
     -webkit-filter: brightness(1);
             filter: brightness(1);
   }
+}
+
+#musicevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
+}
+
+#danceevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:200px;
+}
+
+#dramaevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#literaryevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#quizevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#artevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
+}
+
+#businessevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#munevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
 }

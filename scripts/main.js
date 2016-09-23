@@ -45,6 +45,14 @@ $(function () {
 	attach_button_with_window("#tech_icon", "#tech");
 	attach_button_with_window("#sports_icon", "#sports");
 	attach_button_with_window("#about_icon", "#about");
+    attach_button_with_window("#Music", "#musicevents");
+    attach_button_with_window("#Dance", "#danceevents");
+    attach_button_with_window("#Dramatics", "#dramaevents");
+    attach_button_with_window("#Quizzing", "#quizevents");
+    attach_button_with_window("#Literature", "#literaryevents");
+    attach_button_with_window("#ArtandCreativity", "#artevents");
+    attach_button_with_window("#Business", "#businessevents");
+    attach_button_with_window("#MUN", "#munevents");
     
   
 });
