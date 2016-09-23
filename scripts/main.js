@@ -72,7 +72,8 @@ function add_content_from_markdown(id, file){
 
 $(function () {
   
-		attach_button_with_window("#cultural_icon", "#cultural");
+    attach_button_with_window("#cultural_icon", "#cultural");
+		attach_button_with_window("#campus_icon", "#campus_amb");
 		attach_button_with_window("#tech_icon", "#tech");
 		attach_button_with_window("#sports_icon", "#sports");
 		attach_button_with_window("#about_icon", "#about");
