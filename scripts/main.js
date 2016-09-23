@@ -52,6 +52,21 @@ $('.menubar li').hover(
 );
 
 
+function add_content_from_markdown(id, file){
+
+  var getFileCallback = function(md) {
+      // append html (or something like that)
+      $(id).html(marked(md));
+  };
+
+  var getFile = function(url) {
+     $.get(url, getFileCallback);
+  };
+
+  getFile('static/markdown/' + file);
+
+}
+
 $(function () {
   
 		attach_button_with_window("#cultural_icon", "#cultural");
@@ -66,8 +81,11 @@ $(function () {
     attach_button_with_window("#ArtandCreativity", "#artevents");
     attach_button_with_window("#Business", "#businessevents");
     attach_button_with_window("#MUN", "#munevents");
-    
-  
+
+
+    add_content_from_markdown("#warfare", "cultural/warfare.md");
+    add_content_from_markdown("#burnout", "cultural/burnout.md");
+
 });
 
 
