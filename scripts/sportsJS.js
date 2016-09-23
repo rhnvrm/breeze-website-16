@@ -861,7 +861,7 @@
       home: [
       {
         name: 'Football',
-        asset: 'static/chess.jpg',
+        asset: 'static/football.png',
         prizeMoney: 24000,
         eventCoordinator: 'Shradhey Prasad',
         rules: '1. Standard rules apply.2. 11 a side football matches.3. Group stages - 25/5/5 minutes, Knockouts - 35/5/35 minutes.',
@@ -872,7 +872,7 @@
         y: 410
       }, {
         name: 'Badminton',
-        asset: 'static/badmintonBoys.jpg',
+        asset: 'static/badminton.png',
         prizeMoney: 5000,
         eventCoordinator: 'Bhogeshwar Reddy',
         rules: '1. All BWF standard rules to be followed. 2. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.',
@@ -883,7 +883,7 @@
         y: 300
       }, {
         name: 'Cricket',
-        asset: 'static/cricket.jpg',
+        asset: 'static/cricket.png',
         prizeMoney: 28000,
         eventCoordinator: 'Ayush Mehta',
         rules: '1. Standard ICC rules to be followed. 2. 15 over matches, minus the finals. 3. Coloured kits expected.',
@@ -894,7 +894,7 @@
         y: 300
       }, {
         name: 'Table Tennis',
-        asset: 'bm-neuer.jpg',
+        asset: 'static/tabletennis.png',
         prizeMoney: 10000,
         eventCoordinator: 'Kashish Vijay',
         rules: '1. Standard IITF rules will be followed. 2. 1 tie will consist of 2 singles and 1 doubles match.',
@@ -914,11 +914,24 @@
         phone: '+91 9839562111',
         x: -200,
         y: 180
-      }, {
+      }, 
+      {
+        name: 'Chess',
+        asset: 'static/chess.png',
+        prizeMoney: 10000,
+        eventCoordinator: 'Snehith Reddy',
+        rules: '1. Latest FIDE rules will be followed strictly. In case of any discrepancy, Arbiter’s decision is final.2. The game will be played for 60 minutes, i.e. each player gets 30 minutes to finish their game.',
+        venue: 'Sports complex',
+        emailID: 'sports.committee@snu.edu.in',
+        phone: '+91 8374247734',
+        x: 150,
+        y: 50
+      },
+      {
         name: 'Volleyball',
         asset: 'static/volleyball.png',
         prizeMoney: 20000,
-        eventCoordinator: 'Prerak',
+        eventCoordinator: 'Shashi Kiran Reddy',
         rules: '1. Each League match will be a best-of-three sets, for 25 points each.2. The knock-out matches will be a best-of-five sets for 25 points each.3. All rules according to FIVB.',
         venue: 'Volleyball court',
         emailID: 'sports.committee@snu.edu.in',
@@ -927,15 +940,15 @@
         y: 50
       },{
         name: 'Tennis',
-        asset: 'static/tennis.jpg',
+        asset: 'static/tennis.png',
         prizeMoney: 10000,
         eventCoordinator: 'Anmol Chaudhary',
         rules: '1. All matches will be governed according to the International Tennis Federation. 2. Each tie consists of 3 matches : Singles, Doubles and Reverse Singles.',
         venue: 'Tennis court',
         emailID: 'sports.committee@snu.edu.in',
         phone: '+91 9717828889',
-        x: -110,
-        y: -90
+        x: 0,
+        y: 50
       // }, {
       //   name: 'Lacrosse',
       //   asset: 'bm-neuer.jpg',
