@@ -323,7 +323,7 @@
             var $el;
             $el = $('<div class="js-player player" data-name="' + data.name + '" data-side="' + data.side + '" data-x="' + data.x + '" data-y="' + data.y + '"></div>');
             $el.append('<div class="player__label"><span>' + data.name + '</span></div>');
-            $el.append('<div class="player__img"><img src= ' + data.asset + '></div>');
+            $el.append('<div class="player__img"><img src= ' + data.asset + '><button class="ruleButtons">'+data.name+'</button></div>');
             $el.prepend('<div class="player__card"> </div>');
             $el.prepend('<div class="player__placeholder"></div>');
             // $el.prepend('<div class="player__placeholder"></div>');<h3>' + data.name + '</h3>
@@ -353,7 +353,7 @@
         },
         populateCard: function($el, data) {
 
-            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
+            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/><button class="ruleButtons zIndex=10">'+data.name+'</button>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
 
         },
         displayNone: function($el) {

@@ -59,6 +59,8 @@ iframe, object, embed {
   border: none;
   outline: none;
   color: #fff;
+  margin-left:195px;
+  /*margin: auto;*/
   
 }
 

@@ -28,6 +28,9 @@ function attach_button_with_window(button, container){
     var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
     
     var origin = -diffX + 'px ' + -diffY + 'px';
+    // var x = document.getElementsByClassName("window");
+    // x.zIndex-=1;
+    $container.zIndex+=1;
     
     $container
         .css({
