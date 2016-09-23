@@ -861,6 +861,99 @@
       home: [
       {
         name: 'Football',
+        asset: 'static/chess.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Football Ground',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: 0,
+        y: 410
+      }, {
+        name: 'Badminton',
+        asset: 'static/badmintonBoys.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Badminton court',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: -100,
+        y: 300
+      }, {
+        name: 'Cricket',
+        asset: 'static/cricket.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Cricket Ground',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: 100,
+        y: 300
+      }, {
+        name: 'Table Tennis',
+        asset: 'bm-neuer.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Sports complex',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: 200,
+        y: 180
+      }, {
+        name: 'Basketball',
+        asset: 'static/basketball.png',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Basketball court',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: -200,
+        y: 180
+      }, {
+        name: 'Volleyball',
+        asset: 'static/volleyball.png',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Volleyball court',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: -150,
+        y: 50
+      },{
+        name: 'Tennis',
+        asset: 'static/tennis.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
+        venue: 'Tennis court',
+        emailID: 'emailID',
+        phone: 'phone',
+        x: -110,
+        y: -90
+      // }, {
+      //   name: 'Lacrosse',
+      //   asset: 'bm-neuer.jpg',
+      //   prizeMoney: 5000,
+      //   eventCoordinator: 'Prerak',
+      //   rules: 'Standard',
+      //   venue: 'Football Ground',
+      //   emailID: 'emailID',
+      //   phone: 'phone',
+      //   x: 0,
+      //   y: 100
+      // }],
+    }],
+
+      //not really needed, all redundant players, remove them or just hide the switch?
+      away: [
+      {
+        name: 'Football',
         asset: 'bm-neuer.jpg',
         prizeMoney: 5000,
         eventCoordinator: 'Prerak',
@@ -914,162 +1007,66 @@
         phone: 'phone',
         x: -200,
         y: 180
-      }, {
-        name: 'Hockey',
-        asset: 'bm-neuer.jpg',
-        prizeMoney: 5000,
-        eventCoordinator: 'Prerak',
-        rules: 'Standard',
-        venue: 'Football Ground',
-        emailID: 'emailID',
-        phone: 'phone',
-        x: -150,
-        y: 50
-      }, {
-        name: 'Golf',
-        asset: 'bm-neuer.jpg',
-        prizeMoney: 5000,
-        eventCoordinator: 'Prerak',
-        rules: 'Standard',
-        venue: 'Football Ground',
-        emailID: 'emailID',
-        phone: 'phone',
-        x: -110,
-        y: -90
-      }, {
-        name: 'Lacrosse',
-        asset: 'bm-neuer.jpg',
-        prizeMoney: 5000,
-        eventCoordinator: 'Prerak',
-        rules: 'Standard',
-        venue: 'Football Ground',
-        emailID: 'emailID',
-        phone: 'phone',
-        x: 0,
-        y: 100
-      }],
-
-      //not really needed, all redundant players, remove them or just hide the switch?
-      away: [{
-        name: 'Benzema',
-        asset: 'rm-benzema.jpg',
-        origin: 'France',
-        height: '1.87m',
-        shirt: '9',
-        pos: 'Forward',
-        dob: '36',
-        goals: 1,
-        games: 16,
-        x: 110,
-        y: -190
-      }, {
-        name: 'Bale',
-        asset: 'rm-bale.jpg',
-        origin: 'Wales',
-        height: '1.83m',
-        shirt: '11',
-        pos: 'Midfield',
-        dob: '26',
-        goals: 19,
-        games: 30,
-        x: -110,
-        y: -190
-      }, {
-        name: 'carvajal',
-        asset: 'rm-carvajal.jpg',
-        origin: 'Spain',
-        height: '1.70m',
-        shirt: '15',
-        pos: 'Defender',
-        dob: '32',
-        goals: 9,
-        games: 22,
-        x: 150,
-        y: 50
-      }, {
-        name: 'Silva',
-        asset: 'rm-silva.jpg',
-        origin: 'Brazil',
-        height: '1.87m',
-        shirt: '16',
-        pos: 'Forward',
-        dob: '22',
-        goals: 21,
-        games: 3,
-        x: 0,
-        y: 100
-      }, {
-        name: 'Kroos',
-        asset: 'rm-kroos.jpg',
-        origin: 'Germany',
-        height: '1.82',
-        shirt: '8',
-        pos: 'Midfield',
-        dob: '25',
-        goals: 0,
-        games: 2,
-        x: -150,
-        y: 50
-      }, {
-        name: 'Modric',
-        asset: 'rm-modric.jpg',
-        origin: 'Croatia',
-        height: '1.74m',
-        shirt: '19',
-        pos: 'Midfield',
-        dob: '30',
-        goals: 5,
-        games: 27,
-        x: -200,
-        y: 180
-      }, {
-        name: 'Nacho',
-        asset: 'rm-nacho.jpg',
-        origin: 'Germany',
-        height: '1.79',
-        shirt: '18',
-        pos: 'Defence',
-        dob: '25',
-        goals: 2,
-        games: 25,
-        x: 200,
-        y: 180
-      }, {
-        name: 'Ramos',
-        asset: 'rm-ramos.jpg',
-        origin: 'Spain',
-        height: '1.83m',
-        shirt: '4',
-        pos: 'Defence',
-        dob: '31',
-        goals: 21,
-        games: 1,
-        x: 100,
-        y: 300
-      }, {
-        name: 'Pepe',
-        asset: 'rm-pepe.jpg',
-        origin: 'Brazil',
-        height: '1.88m',
-        shirt: '3',
-        pos: 'Defence',
-        dob: '32',
-        goals: 0,
-        games: 34,
-        x: -100,
-        y: 300
-      }, {
-        name: 'Casillas',
-        asset: 'rm-casillas.jpg',
-        origin: 'Spain',
-        height: '1.85m',
-        shirt: '1',
-        pos: 'Goalie',
-        dob: '34',
-        goals: 0,
-        games: 48,
-        x: 0,
-        y: 410
+      // }, {
+      //   name: 'Modric',
+      //   asset: 'rm-modric.jpg',
+      //   origin: 'Croatia',
+      //   height: '1.74m',
+      //   shirt: '19',
+      //   pos: 'Midfield',
+      //   dob: '30',
+      //   goals: 5,
+      //   games: 27,
+      //   x: -200,
+      //   y: 180
+      // }, {
+      //   name: 'Nacho',
+      //   asset: 'rm-nacho.jpg',
+      //   origin: 'Germany',
+      //   height: '1.79',
+      //   shirt: '18',
+      //   pos: 'Defence',
+      //   dob: '25',
+      //   goals: 2,
+      //   games: 25,
+      //   x: 200,
+      //   y: 180
+      // }, {
+      //   name: 'Ramos',
+      //   asset: 'rm-ramos.jpg',
+      //   origin: 'Spain',
+      //   height: '1.83m',
+      //   shirt: '4',
+      //   pos: 'Defence',
+      //   dob: '31',
+      //   goals: 21,
+      //   games: 1,
+      //   x: 100,
+      //   y: 300
+      // }, {
+      //   name: 'Pepe',
+      //   asset: 'rm-pepe.jpg',
+      //   origin: 'Brazil',
+      //   height: '1.88m',
+      //   shirt: '3',
+      //   pos: 'Defence',
+      //   dob: '32',
+      //   goals: 0,
+      //   games: 34,
+      //   x: -100,
+      //   y: 300
+      // }, {
+      //   name: 'Casillas',
+      //   asset: 'rm-casillas.jpg',
+      //   origin: 'Spain',
+      //   height: '1.85m',
+      //   shirt: '1',
+      //   pos: 'Goalie',
+      //   dob: '34',
+      //   goals: 0,
+      //   games: 48,
+      //   x: 0,
+      //   y: 410
       }]
     }
   };
@@ -1122,9 +1119,10 @@
       var $el;
       $el = $('<div class="js-player player" data-name="' + data.name + '" data-side="' + data.side + '" data-x="' + data.x + '" data-y="' + data.y + '"></div>');
       $el.append('<div class="player__label"><span>' + data.name + '</span></div>');
-      $el.append('<div class="player__img"><img src= ' + ASSET_URL + data.asset + '></div>');
+      $el.append('<div class="player__img"><img src= ' + data.asset + '></div>');
       $el.prepend('<div class="player__card"> </div>');
       $el.prepend('<div class="player__placeholder"></div>');
+      // $el.prepend('<div class="player__placeholder">TEST</div>');
       this.populateCard($el.find('.player__card'), data);
       return $el;
     },
@@ -1149,12 +1147,14 @@
       });
     },
     populateCard: function($el, data) {
-      return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + ' yr</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span>Event coordinator</span><br/>' + data.eventCoordinator + '</li></ul>' + '<ul class="player__card__list player__card__list--last"><li><span>Email ID</span><br/>' + data.emailID + '</li><li><span>Rules</span><br/>' + data.rules + '</li></ul><br><ul class="player__card__list player__card__list--last"><li><span>Email ID</span></br><br/>' + data.emailID);
+    
+    return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span>Event coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Email ID</span><br/>' + data.emailID + '</li><li><span>Rules</span><br/>' + data.rules + '</li></ul><br>')/*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/;
+    
     },
     displayNone: function($el) {
       return $el.css('display', 'none');
     }
-  };
+    };
 
   events = {
     attachAll: function() {
