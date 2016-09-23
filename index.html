@@ -4,155 +4,163 @@
 	<title>Breeze 2016</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.6/phaser.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.0.6/phaser.min.js"></script>
 
 </head>
 <body>
-	<nav id="dock">
-	  <div class="icon" tabindex="0" id="cultural_icon">
-	    <label>Cultural&nbsp;Events</label>
-	    <img src="static/images/dock/culture.png"/>
-	    <div class="dot"></div>
-	  </div>
-	  <div class="icon" tabindex="0" id="tech_icon">
-	    <label>Technical&nbsp;Events</label>
-	    <img src="static/images/dock/tech.png"/>
-	    <div class="dot"></div>
-	  </div>
-	  <div class="icon" tabindex="0" id="sports_icon">
-	    <label>Sports&nbsp;Events</label>
-	    <img src="static/images/dock/sports.png"/>
-	    <div class="dot"></div>
-	  </div>
-	  <div class="icon" tabindex="0" id="about_icon">
-	    <label>About&nbsp;Breeze</label>
-	    <img src="static/images/dock/about.svg"/>
-	    <div class="dot"></div>
-	  </div>
-	  <hr/>
-	  <div class="icon" tabindex="0">
-	    <label>Trash</label>
-	    <img src="http://www.macupdate.com/images/icons256/51758.png"/>
-	    <div class="dot"></div>
-	  </div>
-	  <div id="empty"></div>
-	  <div class="base">
-		<img src="../static/images/dock.png" id="dockImg">
-	  </div>
-	</nav>
+	<div class="desktop">
+		<nav id="dock">
+		  <div class="icon" tabindex="0" id="cultural_icon">
+		    <label>Cultural&nbsp;Events</label>
+		    <img src="static/images/dock/culture.png"/>
+		    <div class="dot"></div>
+		  </div>
+		  <div class="icon" tabindex="0" id="tech_icon">
+		    <label>Technical&nbsp;Events</label>
+		    <img src="static/images/dock/tech.png"/>
+		    <div class="dot"></div>
+		  </div>
+		  <div class="icon" tabindex="0" id="sports_icon">
+		    <label>Sports&nbsp;Events</label>
+		    <img src="static/images/dock/sports.png"/>
+		    <div class="dot"></div>
+		  </div>
+		  <div class="icon" tabindex="0" id="about_icon">
+		    <label>About&nbsp;Breeze</label>
+		    <img src="static/images/dock/about.svg"/>
+		    <div class="dot"></div>
+		  </div>
+		  <hr/>
+		  <div class="icon" tabindex="0">
+		    <label>Trash</label>
+		    <img src="http://www.macupdate.com/images/icons256/51758.png"/>
+		    <div class="dot"></div>
+		  </div>
+		  <div id="empty"></div>
+		  <div class="base">
+			<img src="static/images/dock.png" id="dockImg">
+		  </div>
+		</nav>
+		
+		<div id="logo" class="glitch-image">
+			<canvas id="canvas"></canvas>
+			<!-- <img src="static/images/breeze-white.png" width="450px"> -->
+		</div>
+
+		<div id="cultural" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Cultural Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div class="cardcontainer">
+	            <div id="Dance" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="Music" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="Dramatics" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="Quizzing" class="card">
+	              
+	            </div>
+	        </div>
+	        
+	        <div class="cardcontainer">
+	            <div id="Literature" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="ArtandCreativity" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="Business" class="card">
+	              
+	            </div>
+	        </div>
+	        <div class="cardcontainer">
+	            <div id="MUN" class="card">
+	              
+	            </div>
+	        </div>
+		  </div>
+		</div>
+
+		<div id="tech" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Tech Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+					<div id="game"></div>
+		  </div>
+		</div>	
+
+		<div id="sports" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Sports Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+					<img src="static/images/fruit_demo.png" width="100%">
+		  </div>
+		</div>	
+
+
+		<div id="about" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">About Breeze</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+					<img src="static/images/fruit_demo.png" width="100%">
+		  </div>
+		</div>
 	
-	<div id="logo">
-		<img src="static/images/breeze-white.png" width="450px">
 	</div>
-
-	<div id="cultural" class="window hidden">
-	  <div class="header">
-	    <div class="top-bar">
-	      <div class="controls">
-	        <div class="close"></div>
-	        <div class="minify"></div>
-	      </div>
-	      <div class="title">Cultural Events</div>
-	    </div>
-	  </div>
-		
-	  <div class="window-content">
-		<div class="cardcontainer">
-            <div id="Dance" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="Music" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="Dramatics" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="Quizzing" class="card">
-              
-            </div>
-        </div>
-        
-        <div class="cardcontainer">
-            <div id="Literature" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="ArtandCreativity" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="Business" class="card">
-              
-            </div>
-        </div>
-        <div class="cardcontainer">
-            <div id="MUN" class="card">
-              
-            </div>
-        </div>
-	  </div>
-	</div>
-
-	<div id="tech" class="window hidden">
-	  <div class="header">
-	    <div class="top-bar">
-	      <div class="controls">
-	        <div class="close"></div>
-	        <div class="minify"></div>
-	      </div>
-	      <div class="title">Tech Events</div>
-	    </div>
-	  </div>
-		
-	  <div class="window-content">
-				<div id="game"></div>
-	  </div>
-	</div>	
-
-	<div id="sports" class="window hidden">
-	  <div class="header">
-	    <div class="top-bar">
-	      <div class="controls">
-	        <div class="close"></div>
-	        <div class="minify"></div>
-	      </div>
-	      <div class="title">Sports Events</div>
-	    </div>
-	  </div>
-		
-	  <div class="window-content">
-				<img src="static/images/fruit_demo.png" width="100%">
-	  </div>
-	</div>	
-
-	<div id="about" class="window hidden">
-	  <div class="header">
-	    <div class="top-bar">
-	      <div class="controls">
-	        <div class="close"></div>
-	        <div class="minify"></div>
-	      </div>
-	      <div class="title">About Breeze</div>
-	    </div>
-	  </div>
-		
-	  <div class="window-content">
-				<img src="static/images/fruit_demo.png" width="100%">
-	  </div>
-	</div>
-	
-
 
 
 	<script type="text/javascript" src="scripts/main.js"></script>
