@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Canvas Console</title>
+    
+    
+        <style>
+        body{
+          
+        }
+        div#div {
+          /*float: left;*/
+          width: 100%;
+          height: 100%;
+          clear: both;
+          background-color: black;
+        }
+        canvas{
+          background-color: black;
+          margin: 0;
+          padding: 0;
+        }
+        
+        div div {
+          height: 70px;
+          width: 600px;
+          margin: auto;
+          font: normal 30px monaco; 
+          background-color: #82826e;
+          border-bottom: 20px solid #82826e;
+          border-right: 8px solid #82826f;
+          border-left: 8px solid #82826f;
+          border-top: 3px solid #82828f;
+          border-radius: 14px / 30px;
+          box-shadow: 0px 4px 6px 0px #000000;
+        }
+        div div button{ 
+          font: normal 30px monaco; 
+          background-color: #cece9a;
+          border: none;
+          border-radius: 7px;
+          height: 65px;
+          width: 590px;
+          cursor: pointer;
+          box-shadow: 2px 2px 5px 5px #82828f;
+          box-shadow: inset 0 0 6px #6a6b56;
+          -webkit-filter: blur(2px);
+          background-image: radial-gradient(center center, 500px 35px, #acad73, #cece9a);
+        }
+        div div:active {
+          box-shadow: 0px 1px 3px 0px #000000;
+        }
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+    <div id="div"></div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
