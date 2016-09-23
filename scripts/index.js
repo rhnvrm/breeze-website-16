@@ -861,94 +861,81 @@
       home: [
       {
         name: 'Football',
-        asset: 'static/football.png',
-        prizeMoney: 24000,
-        eventCoordinator: 'Shradhey Prasad',
-        rules: '1. Standard rules apply.2. 11 a side football matches.3. Group stages - 25/5/5 minutes, Knockouts - 35/5/35 minutes.',
+        asset: 'static/chess.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Football Ground',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+919650331064',
+        emailID: 'emailID',
+        phone: 'phone',
         x: 0,
         y: 410
       }, {
         name: 'Badminton',
-        asset: 'static/badminton.png',
+        asset: 'static/badmintonBoys.jpg',
         prizeMoney: 5000,
-        eventCoordinator: 'Bhogeshwar Reddy',
-        rules: '1. All BWF standard rules to be followed. 2. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.',
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Badminton court',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 8686262568',
+        emailID: 'emailID',
+        phone: 'phone',
         x: -100,
         y: 300
       }, {
         name: 'Cricket',
-        asset: 'static/cricket.png',
-        prizeMoney: 28000,
-        eventCoordinator: 'Ayush Mehta',
-        rules: '1. Standard ICC rules to be followed. 2. 15 over matches, minus the finals. 3. Coloured kits expected.',
+        asset: 'static/cricket.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Cricket Ground',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 9805783738',
+        emailID: 'emailID',
+        phone: 'phone',
         x: 100,
         y: 300
       }, {
         name: 'Table Tennis',
-        asset: 'static/tabletennis.png',
-        prizeMoney: 10000,
-        eventCoordinator: 'Kashish Vijay',
-        rules: '1. Standard IITF rules will be followed. 2. 1 tie will consist of 2 singles and 1 doubles match.',
+        asset: 'bm-neuer.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Sports complex',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91  9409228181',
+        emailID: 'emailID',
+        phone: 'phone',
         x: 200,
         y: 180
       }, {
         name: 'Basketball',
         asset: 'static/basketball.png',
-        prizeMoney: 20000,
-        eventCoordinator: 'Harshil Aggarwal',
-        rules: '1. Standard FIBA rules will be followed. 2. Each game consists of four quarters of 10 minutes.',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Basketball court',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 9839562111',
+        emailID: 'emailID',
+        phone: 'phone',
         x: -200,
         y: 180
-      }, 
-      {
-        name: 'Chess',
-        asset: 'static/chess.png',
-        prizeMoney: 10000,
-        eventCoordinator: 'Snehith Reddy',
-        rules: '1. Latest FIDE rules will be followed strictly. In case of any discrepancy, Arbiter’s decision is final.2. The game will be played for 60 minutes, i.e. each player gets 30 minutes to finish their game.',
-        venue: 'Sports complex',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 8374247734',
-        x: 150,
-        y: 50
-      },
-      {
+      }, {
         name: 'Volleyball',
         asset: 'static/volleyball.png',
-        prizeMoney: 20000,
-        eventCoordinator: 'Shashi Kiran Reddy',
-        rules: '1. Each League match will be a best-of-three sets, for 25 points each.2. The knock-out matches will be a best-of-five sets for 25 points each.3. All rules according to FIVB.',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Volleyball court',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 8130868769',
+        emailID: 'emailID',
+        phone: 'phone',
         x: -150,
         y: 50
       },{
         name: 'Tennis',
-        asset: 'static/tennis.png',
-        prizeMoney: 10000,
-        eventCoordinator: 'Anmol Chaudhary',
-        rules: '1. All matches will be governed according to the International Tennis Federation. 2. Each tie consists of 3 matches : Singles, Doubles and Reverse Singles.',
+        asset: 'static/tennis.jpg',
+        prizeMoney: 5000,
+        eventCoordinator: 'Prerak',
+        rules: 'Standard',
         venue: 'Tennis court',
-        emailID: 'sports.committee@snu.edu.in',
-        phone: '+91 9717828889',
-        x: 0,
-        y: 50
+        emailID: 'emailID',
+        phone: 'phone',
+        x: -110,
+        y: -90
       // }, {
       //   name: 'Lacrosse',
       //   asset: 'bm-neuer.jpg',
@@ -1135,7 +1122,6 @@
       $el.append('<div class="player__img"><img src= ' + data.asset + '></div>');
       $el.prepend('<div class="player__card"> </div>');
       $el.prepend('<div class="player__placeholder"></div>');
-      // $el.prepend('<div class="player__placeholder"></div>');<h3>' + data.name + '</h3>
       // $el.prepend('<div class="player__placeholder">TEST</div>');
       this.populateCard($el.find('.player__card'), data);
       return $el;
@@ -1162,7 +1148,7 @@
     },
     populateCard: function($el, data) {
     
-    return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Event coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>')/*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/;
+    return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span>Event coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Email ID</span><br/>' + '<h4>'+data.emailID+'</h4>' + '</li><li><span>Rules</span><br/>' + data.rules + '</li></ul><br>')/*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/;
     
     },
     displayNone: function($el) {
