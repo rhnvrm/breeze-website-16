@@ -70,7 +70,7 @@ var slashes,
  
 function preload() {
 
-	game.load.image("background", "static/images/fruit_demo.png");
+	game.load.image("background", "../static/images/fruitNinjaBG.png");
 
 }
 

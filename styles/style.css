@@ -422,7 +422,6 @@ html {
 
 .card {
   
-  background: url("../static/images/solitaire/quizCard.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -502,8 +501,13 @@ html {
 /* Game */
 
 #game {
-	width: inherit;
-	height: inherit;
+	width: relative;
+	height: relative;
+}
+
+#tech{
+	width: 650px;
+	height': 400px;
 }
 
 #Dance{
