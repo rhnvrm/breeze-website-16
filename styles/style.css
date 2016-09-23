@@ -487,8 +487,13 @@ html {
 /* Game */
 
 #game {
-	width: inherit;
-	height: inherit;
+	width: relative;
+	height: relative;
+}
+
+#tech{
+	width: 650px;
+	height': 400px;
 }
 
 #Dance{
