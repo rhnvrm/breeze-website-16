@@ -374,9 +374,9 @@ html {
 
 #logo {
 	position: absolute;
-	left: 50%;
+	/*left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);*/
 }
 
 #logo img {
@@ -517,3 +517,68 @@ html {
   background: url("../static/images/solitaire/munCard.png");
 }
 
+/* Glitch */
+
+.glitch-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 0;
+  -webkit-animation: flick 80ms linear infinite;
+          animation: flick 80ms linear infinite;
+}
+.glitch-image canvas {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-animation: turnOn 100ms ease-in 500ms forwards;
+          animation: turnOn 100ms ease-in 500ms forwards;
+}
+
+@-webkit-keyframes flick {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+
+@keyframes flick {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+@-webkit-keyframes turnOn {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+@keyframes turnOn {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
