@@ -75,23 +75,24 @@ nav label {
   display: none;
 }
 
-nav .base{
-	
+
+ nav .base{	
 	bottom: 0px;
-	height: 45px;
-	z-index: -10;
-	background-color: #888;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#ccc));
-	background-image: -webkit-linear-gradient(top, #333, #999); 
-	background-image: -moz-linear-gradient(top, #333, #999); /* Gradient works on FF 3.6+ */
-	opacity: .5;
-	border-bottom: 2px #aaa solid;
-	-webkit-transform-origin: 50% 100%;
-	-webkit-transform: rotateX(55deg); /* 3d - works on webkit only */
-	-moz-transform-origin: 50% 100%;
-	-moz-transform: rotateX(55deg); /* not supported on current 3.7 */
-	-o-transform-origin: 50% 100%;
-	-o-transform: rotateX(55deg);
+	height:25px;
+	z-index: 1;
+
+} 
+
+#empty{
+	z-index: -1;
+}
+
+#dockImg{
+	position: absolute;
+	width : 100%;
+	margin-top: -45px;
+	z-index: -2;
+	opacity: .65;
 }
 
 nav label::before,
