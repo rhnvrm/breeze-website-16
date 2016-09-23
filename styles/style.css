@@ -694,6 +694,14 @@ html {
   left:450px;
 }
 
+#about{
+  width:57%;
+  height:66%;
+}
+
+#aboutwindow{
+  overflow: hidden;
+}
 
 /* Top Bar */
 
