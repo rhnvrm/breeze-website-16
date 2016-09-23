@@ -39,17 +39,25 @@ function attach_button_with_window(button, container){
 
 }
 
-$(".menubar li").on('mouseover', function(){
-	console.log($(this).children("sublist").css('visibility', 'visible'));
-});
+$('.menubar li').hover(
+
+  function() {
+    $('.sublist', this).css('visibility', 'visible');
+
+  },
+
+  function() {
+    $('.sublist', this).css('visibility', 'hidden');
+  }
+);
 
 
 $(function () {
   
-	attach_button_with_window("#cultural_icon", "#cultural");
-	attach_button_with_window("#tech_icon", "#tech");
-	attach_button_with_window("#sports_icon", "#sports");
-	attach_button_with_window("#about_icon", "#about");
+		attach_button_with_window("#cultural_icon", "#cultural");
+		attach_button_with_window("#tech_icon", "#tech");
+		attach_button_with_window("#sports_icon", "#sports");
+		attach_button_with_window("#about_icon", "#about");
     attach_button_with_window("#Music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
     attach_button_with_window("#Dramatics", "#dramaevents");
