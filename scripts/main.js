@@ -49,6 +49,9 @@ $(function () {
   
 });
 
+// $( "#fruit").click(function() {
+  // $( "#fruit" ).toggle( "explode" );
+// });
 
 
 var w = $("#tech").innerWidth(),
@@ -63,14 +66,33 @@ var slashes,
 function preload() {
 
 	game.load.image("background", "../static/images/fruitNinjaBG.png");
+	game.load.image("pineapple","../static/images/fruit/pineapple.png");
+	game.load.image("apple","../static/images/fruit/apple.png");
+	game.load.image("peach","../static/images/fruit/peach.png");
+	game.load.image("kiwi","../static/images/fruit/kiwi.png");
+	game.load.image("pear","../static/images/fruit/pear.png");
+	game.load.image("lemon","../static/images/fruit/lemon.png");
+	game.load.image("squash","../static/images/fruit/squash.png");
 
 }
 
+//var objects;
 
 function create() {
 
 	game.physics.startSystem(Phaser.Physics.ARCADE);
+	
+	//objects = game.add.group();
+
+	
 	game.add.tileSprite(0, 0, w, h, 'background');
+	game.add.tileSprite(50, 105, 65, 74, "pineapple");
+	game.add.tileSprite(208, 40, 63, 84, "apple");
+	game.add.tileSprite(398, 56, 65, 57, "peach");
+	game.add.tileSprite(548, 115, 65, 63, "kiwi");
+	game.add.tileSprite(114, 268, 59, 87, "pear");
+	game.add.tileSprite(302, 250, 65, 55, "lemon");
+	game.add.tileSprite(482, 275, 65, 65, "squash");
 	slashes = game.add.graphics(0, 0);
 }
 
