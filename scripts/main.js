@@ -107,6 +107,10 @@ $(function () {
     attach_menubutton_with_window("#menuitem_sports", "#sports");
 	attach_button_with_window("#about_icon", "#about"); 
     attach_menubutton_with_window("#menuitem_about", "#about");
+	attach_button_with_window("#campus_icon", "#campus_amb");
+    attach_button_with_window("#tech_icon", "#tech");
+	attach_button_with_window("#sports_icon", "#sports");
+	attach_button_with_window("#about_icon", "#about");
     attach_button_with_window("#Music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
     attach_button_with_window("#Dramatics", "#dramaevents");
