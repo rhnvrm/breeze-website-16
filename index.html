@@ -4,6 +4,7 @@
 	<title>Breeze 2016</title>
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
@@ -17,9 +18,65 @@
 	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
   <script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 
+
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    
+    
+<!--        <link rel="stylesheet" href="css/style.css">	-->
+	<script src="scripts/marked.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/phaser/2.0.6/phaser.min.js"></script>
+	
+
 </head>
 <body>
+	<div class="menubar">
+	  <ul>
+	    <li><a href="#"><span class="fa fa-gamepad"></span></a></li>
+	    <li><a href="#" class="program">Breeze '16</a></li>
+	    <li>
+	    	<a href="#">Cultural</a>
+	    	<ul id="#cultural_sublist" class="sublist">
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+        </ul>
+	    </li>
+	    <li>
+	    	<a href="#">Technical</a>
+	    	<ul class="sublist">
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+        </ul>
+    	</li>	    
+    	<li>
+	    	<a href="#">Sports</a>
+	    	<ul class="sublist">
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+            <li>Event</li>
+        </ul>
+    	</li>	    
+
+	  </ul>
+	</div>
 	<div class="desktop">
+		<div class="fullscreen-bg">
+		  <video playsinline autoplay muted loop class="fullscreen-bg__video">
+		      <source src="static/videos/acr.webm" type="video/webm">
+		  </video>
+		</div>
+
 		<nav id="dock">
 		  <div class="icon" tabindex="0" id="cultural_icon">
 		    <label>Cultural&nbsp;Events</label>
@@ -147,6 +204,7 @@
 					<img src="static/images/fruit_demo.png" width="100%">
 		  </div>
 		</div>	
+	
 
 
 		<div id="about" class="window hidden">
@@ -164,8 +222,165 @@
 					<img src="static/images/fruit_demo.png" width="100%">
 		  </div>
 		</div>
-	
-	</div>
+		
+		<div id="musicevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Music Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="acoustyx" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="crescendo" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="nostringsattached" class="eventcardcontainer">
+	              
+	        </div>
+	       </div>
+        </div>
+        <div id="danceevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Dance Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+					<div id="warfare" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="burnout" class="eventcardcontainer">
+	              
+	        </div>
+	        </div>
+        </div>
+        <div id="dramaevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Drama Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="aagaz" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="pacman" class="eventcardcontainer">
+	              
+	        </div>
+	     </div>
+        </div>
+        <div id="quizevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Quiz Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="fps" class="eventcardcontainer">
+	              
+	        </div>
+	     </div>
+        </div>
+        <div id="literaryevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Literature Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="snipthrusnaps" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="reporto" class="eventcardcontainer">
+	              
+	        </div>
+	        </div>
+        </div>
+        <div id="artevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Art and Creativity Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="fashionfiesta" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="logokiwar" class="eventcardcontainer">
+	              
+	        </div>
+	        <div id="tbd" class="eventcardcontainer">
+	              
+	        </div>
+	       </div>
+        </div>
+        <div id="businessevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">Business Events</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="madhat" class="eventcardcontainer">
+	              
+	        </div>
+	     </div>
+        </div>
+        <div id="munevents" class="window hidden">
+		  <div class="header">
+		    <div class="top-bar">
+		      <div class="controls">
+		        <div class="close"></div>
+		        <div class="minify"></div>
+		      </div>
+		      <div class="title">MUN</div>
+		    </div>
+		  </div>
+			
+		  <div class="window-content">
+			<div id="alliedcabinet" class="eventcardcontainer">
+	              
+	        </div>
+	     </div>
+        </div>
+  </div>
 
 
 	<script type="text/javascript" src="scripts/main.js"></script>

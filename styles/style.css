@@ -1,15 +1,25 @@
 html { 
-  background: url(../static/images/wallpaper_2.jpg) no-repeat center center fixed; 
+  background: #000; 
   background-size: cover;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
 .desktop {
 	  position: fixed;
-	  top: 0;
+	  top: 24px;
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
+}
+
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
 /* Dock Code https://codepen.io/PageOnline/pen/JhoFb */
@@ -215,8 +225,8 @@ html {
 
 .window{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 7%;
+	left: 25%;
   height: 66%;
   width: 50%;
   margin-left: auto;
@@ -380,7 +390,7 @@ html {
 }
 
 #logo img {
-	filter: drop-shadow(5px 5px 5px #222);
+	/*filter: drop-shadow(5px 5px 5px #222);*/
 }
 
 
@@ -405,9 +415,24 @@ html {
   margin: 2px;
 }
 
+.eventcardcontainer {
+  
+  float: left;
+  width: 448px;
+  height: 98%;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 2px;
+}
+
 
 .card {
   
+  background: url("../static/images/solitaire/quizCard.png");
   width: 100%;
   height: 100%;
   position: absolute;
@@ -594,4 +619,142 @@ html {
     -webkit-filter: brightness(1);
             filter: brightness(1);
   }
+}
+
+#musicevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
+}
+
+#danceevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:200px;
+}
+
+#dramaevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#literaryevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#quizevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#artevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
+}
+
+#businessevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#munevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+
+/* Top Bar */
+
+.menubar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menubar ul li {
+  display: inline-block;
+}
+.menubar ul li a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.menubar {
+  background-color: #bdc3c7;
+  z-index: 9000;
+}
+.menubar ul {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.menubar ul li a {
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.4;
+  padding: 0.1em 0.5em;
+  text-decoration: none;
+}
+.menubar ul li a .fa-apple {
+  font-size: 1.2em;
+}
+.menubar ul li a.program {
+  font-weight: bold;
+}
+.menubar ul li a:hover {
+  background: #7793f5;
+  background: -moz-linear-gradient(top,  #7793f5 0%, #406df2 50%, #275af1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
+  border-bottom:1px solid #1746d7;
+  color: #fff;
+}
+
+.menubar ul li ul.sublist{
+	float: left;
+	top: 24px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background: rgba(255,255,255,0.95);
+	box-shadow: 0 6px 12px rgba(0,0,0,0.7);
+	border-radius: 0 0 5px 5px;
+	visibility: hidden;
+}
+
+.menubar .sublist{
+	z-index: 100;
+}
+
+.menubar .sublist li{
+	display: list-item;
+	padding: 0px 0px 0px 11px;
+	font-size: 13px;
+	width: 200px;
+	line-height: 20px;
+}
+
+.menubar .sublist li:hover{
+	background: #7793f5;
+	background: -moz-linear-gradient(top,  #7793f5 0%, #406df2 50%, #275af1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
+	border-bottom:1px solid #1746d7;
+	color: #fff;
+}
+
+.menubar .sublist li:first-child{
+	margin-top: 5px;
 }
