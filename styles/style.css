@@ -1,5 +1,5 @@
 html { 
-  background: url(../static/images/wallpaper_2.jpg) no-repeat center center fixed; 
+  background: #000; 
   background-size: cover;
   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif
   
@@ -11,6 +11,16 @@ html {
 	  left: 0;
 	  right: 0;
 	  bottom: 0;
+}
+
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
 }
 
 /* Dock Code https://codepen.io/PageOnline/pen/JhoFb */
@@ -397,7 +407,7 @@ html {
 }
 
 #logo img {
-	filter: drop-shadow(5px 5px 5px #222);
+	/*filter: drop-shadow(5px 5px 5px #222);*/
 }
 
 
@@ -519,14 +529,23 @@ html {
 /* Game */
 
 #game {
-	width: relative;
-	height: relative;
+	width: 650px;
+	height': 400px;
+	background: url("../static/images/solitaire/fruitNinjaBG.png");
+	z-index: 0;
 }
 
 #tech{
 	width: 650px;
-	height': 400px;
+	height': 400px;		
 }
+
+/* #fruit{
+	width: 55px;
+    height: 80px;
+	position: relative;
+	z-index: 1;
+} */
 
 #Dance{
   background: url("../static/images/solitaire/danceCard.png");

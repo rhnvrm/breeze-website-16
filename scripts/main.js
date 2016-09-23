@@ -39,17 +39,40 @@ function attach_button_with_window(button, container){
 
 }
 
-$(".menubar li").on('mouseover', function(){
-	console.log($(this).children("sublist").css('visibility', 'visible'));
-});
+$('.menubar li').hover(
 
+  function() {
+    $('.sublist', this).css('visibility', 'visible');
+
+  },
+
+  function() {
+    $('.sublist', this).css('visibility', 'hidden');
+  }
+);
+
+
+function add_content_from_markdown(id, file){
+
+  var getFileCallback = function(md) {
+      // append html (or something like that)
+      $(id).html(marked(md));
+  };
+
+  var getFile = function(url) {
+     $.get(url, getFileCallback);
+  };
+
+  getFile('static/markdown/' + file);
+
+}
 
 $(function () {
   
-	attach_button_with_window("#cultural_icon", "#cultural");
-	attach_button_with_window("#tech_icon", "#tech");
-	attach_button_with_window("#sports_icon", "#sports");
-	attach_button_with_window("#about_icon", "#about");
+		attach_button_with_window("#cultural_icon", "#cultural");
+		attach_button_with_window("#tech_icon", "#tech");
+		attach_button_with_window("#sports_icon", "#sports");
+		attach_button_with_window("#about_icon", "#about");
     attach_button_with_window("#Music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
     attach_button_with_window("#Dramatics", "#dramaevents");
@@ -58,8 +81,11 @@ $(function () {
     attach_button_with_window("#ArtandCreativity", "#artevents");
     attach_button_with_window("#Business", "#businessevents");
     attach_button_with_window("#MUN", "#munevents");
-    
-  
+
+
+    add_content_from_markdown("#warfare", "cultural/warfare.md");
+    add_content_from_markdown("#burnout", "cultural/burnout.md");
+
 });
 
 
@@ -76,6 +102,13 @@ var slashes,
 function preload() {
 
 	game.load.image("background", "../static/images/fruitNinjaBG.png");
+	game.load.image("pineapple","../static/images/fruit/pineapple.png");
+	game.load.image("apple","../static/images/fruit/apple.png");
+	game.load.image("peach","../static/images/fruit/peach.png");
+	game.load.image("kiwi","../static/images/fruit/kiwi.png");
+	game.load.image("pear","../static/images/fruit/pear.png");
+	game.load.image("lemon","../static/images/fruit/lemon.png");
+	game.load.image("squash","../static/images/fruit/squash.png");
 
 }
 
@@ -83,7 +116,16 @@ function preload() {
 function create() {
 
 	game.physics.startSystem(Phaser.Physics.ARCADE);
+	
+	
 	game.add.tileSprite(0, 0, w, h, 'background');
+	game.add.tileSprite(50, 105, 65, 74, "pineapple");
+	game.add.tileSprite(208, 40, 63, 84, "apple");
+	game.add.tileSprite(398, 56, 65, 57, "peach");
+	game.add.tileSprite(548, 115, 65, 63, "kiwi");
+	game.add.tileSprite(114, 268, 59, 87, "pear");
+	game.add.tileSprite(302, 250, 65, 55, "lemon");
+	game.add.tileSprite(482, 275, 65, 65, "squash");
 	slashes = game.add.graphics(0, 0);
 }
 
@@ -130,14 +172,14 @@ function render() {
 
   window.requestAnimationFrame = requestAnimationFrame;
 
-  img.src = '../static/images/breeze-white-small.png';
+  img.src = 'static/images/breeze-white-small.png';
   img.onload = function() {
     init();
     glitchAnimation();
   };
 
   var init = function() {
-    canvas.width = width = img.width;
+    canvas.width = width = img.width*1.5;
     offset = width * offset;
     canvas.height = height = ~~(img.height * (width - offset * 2) / img.width);
     document.querySelector('.glitch-image').style.width = width + 'px';
