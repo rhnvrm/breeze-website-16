@@ -145,7 +145,7 @@ function render() {
   };
 
   var init = function() {
-    canvas.width = width = img.width;
+    canvas.width = width = img.width*1.5;
     offset = width * offset;
     canvas.height = height = ~~(img.height * (width - offset * 2) / img.width);
     document.querySelector('.glitch-image').style.width = width + 'px';
