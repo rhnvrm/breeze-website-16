@@ -215,8 +215,8 @@ html {
 
 .window{
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 7%;
+	left: 25%;
   height: 66%;
   width: 50%;
   margin-left: auto;
@@ -405,6 +405,20 @@ html {
   margin: 2px;
 }
 
+.eventcardcontainer {
+  
+  float: left;
+  width: 448px;
+  height: 98%;
+  position: relative;
+  -webkit-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 2px;
+}
+
 
 .card {
   
@@ -488,8 +502,13 @@ html {
 /* Game */
 
 #game {
-	width: inherit;
-	height: inherit;
+	width: relative;
+	height: relative;
+}
+
+#tech{
+	width: 650px;
+	height': 400px;
 }
 
 #Dance{
@@ -583,84 +602,58 @@ html {
   }
 }
 
-
-/* Top Bar */
-
-.menubar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.menubar ul li {
-  display: inline-block;
-}
-.menubar ul li a {
-  color: #333;
-  display: block;
-  text-decoration: none;
-}
-.menubar {
-  background-color: #bdc3c7;
-  z-index: 9000;
-}
-.menubar ul {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.menubar ul li a {
-  color: #333;
-  font-size: 0.95em;
-  line-height: 1.4;
-  padding: 0.1em 0.5em;
-  text-decoration: none;
-}
-.menubar ul li a .fa-apple {
-  font-size: 1.2em;
-}
-.menubar ul li a.program {
-  font-weight: bold;
-}
-.menubar ul li a:hover {
-  background: #7793f5;
-  background: -moz-linear-gradient(top,  #7793f5 0%, #406df2 50%, #275af1 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
-  border-bottom:1px solid #1746d7;
-  color: #fff;
+#musicevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
 }
 
-.menubar ul li ul.sublist{
-	float: left;
-	top: 24px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	background: rgba(255,255,255,0.95);
-	box-shadow: 0 6px 12px rgba(0,0,0,0.7);
-	border-radius: 0 0 5px 5px;
-	visibility: hidden;
+#danceevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:200px;
 }
 
-.menubar .sublist{
-	z-index: 100;
+#dramaevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
 }
 
-.menubar .sublist li{
-	display: list-item;
-	padding: 0px 0px 0px 11px;
-	font-size: 13px;
-	width: 200px;
-	line-height: 20px;
+#literaryevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
 }
 
-.menubar .sublist li:hover{
-	background: #7793f5;
-	background: -moz-linear-gradient(top,  #7793f5 0%, #406df2 50%, #275af1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7793f5), color-stop(50%,#406df2), color-stop(100%,#275af1));
-	border-bottom:1px solid #1746d7;
-	color: #fff;
+#quizevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
 }
 
-.menubar .sublist li:first-child{
-	margin-top: 5px;
+#artevents{
+  height:95%;
+  width:100%;
+  top:24px;
+  left:0px;
+}
+
+#businessevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#munevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
 }
