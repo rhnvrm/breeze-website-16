@@ -62,11 +62,7 @@ var slashes,
  
 function preload() {
 
-<<<<<<< HEAD
 	game.load.image("background", "../static/images/fruitNinjaBG.png");
-=======
-	game.load.image("background", "static/images/fruit_demo.png");
->>>>>>> origin/gh-pages
 
 }
 
