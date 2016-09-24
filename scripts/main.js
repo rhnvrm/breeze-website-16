@@ -41,6 +41,44 @@ function attach_button_with_window(button, container){
 
 }
 
+function attach_techbutton_with_window(button, container){
+
+	var $button = $(button);
+  var $container = $(container);
+
+	var buttonHeight = $button.height();
+  var buttonWidth = $button.width();
+  
+  
+  $(container).find(".close").on('click', function(){
+  	$(container).toggleClass('hidden');
+  });
+
+  $(container).find(".minify").on('click', function(){
+  	$(container).toggleClass('hidden');
+  });
+  
+
+  $button.on('onmouseover', function () {
+    
+    var buttonOffset = $button.offset();
+    var containerOffset = $container.offset();
+    
+    var diffX = containerOffset.left - buttonOffset.left - buttonWidth*0.5;
+    var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
+    
+    var origin = -diffX + 'px ' + -diffY + 'px';
+    
+    $container
+        .css({
+          transformOrigin: origin  
+        })
+        .toggleClass('hidden');
+        
+  });
+
+}
+
 function attach_menubutton_with_window(button, container){
 
 	var $button = $(button);
@@ -128,8 +166,7 @@ $(function () {
     attach_menubutton_with_window("#menuitem_business", "#businessevents");
     attach_button_with_window("#MUN", "#munevents");
     attach_menubutton_with_window("#menuitem_mun", "#munevents");
-
-
+    
     add_content_from_markdown("#warfare", "cultural/warfare.md");
     add_content_from_markdown("#burnout", "cultural/burnout.md");
     add_content_from_markdown("#aagaz", "cultural/aagaaz.md");

@@ -699,6 +699,55 @@ html {
   height:66%;
 }
 
+#hackathon{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#mathsoc{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#civilevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#roboticevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#saeevents{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
+#mechanicalevents{
+  height:95%;
+  width:68%;
+  top:24px;
+  left:220px;
+}
+
+#asme{
+  height:95%;
+  width:35%;
+  top:24px;
+  left:450px;
+}
+
 #removescroll{
   overflow: hidden;
 }
