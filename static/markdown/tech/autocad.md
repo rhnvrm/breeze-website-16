@@ -1,0 +1,35 @@
+# Auto Cad 
+
+The competitor will have to exhibit his knowledge and skills necessary to create 2D drawings. The competitor should also be able to read, interpret and draw the problem/figure given on the spot with accuracy in minimum time.
+
+## Prize Money (Cash)
+
+* First Prize - 4000
+
+## Event Details
+
+| Round | Day | Time | Venue |
+|:-----:|:---:|:----:|:-----:|
+|    1   |Sunday |  2 PM to 5 PM |  Maths Lab|
+
+
+
+ 
+## Event Coordinator
+
+**Name:** Akash Agarwal
+
+**Phone:** [+91  8130274679](tel: 8130274679)
+
+**Email:** [orion@snu.edu.in](mailto:orion@snu.edu.in)
+
+## Rules
+
+* Maximum number of students allowed in a group should be two.
+* Use of internet is prohibited during the competition and will result to disqualification.
+* Software will be provided.
+* Further details regarding the event will be mailed once registration is done.
+
+
+**Note:** Event Prize money is subject to change by the organising committee without any prior notice. The decision by the organising committee stands final and binding on all participants.
+

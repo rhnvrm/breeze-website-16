@@ -41,44 +41,6 @@ function attach_button_with_window(button, container){
 
 }
 
-function attach_techbutton_with_window(button, container){
-
-	var $button = $(button);
-  var $container = $(container);
-
-	var buttonHeight = $button.height();
-  var buttonWidth = $button.width();
-  
-  
-  $(container).find(".close").on('click', function(){
-  	$(container).toggleClass('hidden');
-  });
-
-  $(container).find(".minify").on('click', function(){
-  	$(container).toggleClass('hidden');
-  });
-  
-
-  $button.on('onmouseover', function () {
-    
-    var buttonOffset = $button.offset();
-    var containerOffset = $container.offset();
-    
-    var diffX = containerOffset.left - buttonOffset.left - buttonWidth*0.5;
-    var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
-    
-    var origin = -diffX + 'px ' + -diffY + 'px';
-    
-    $container
-        .css({
-          transformOrigin: origin  
-        })
-        .toggleClass('hidden');
-        
-  });
-
-}
-
 function attach_menubutton_with_window(button, container){
 
 	var $button = $(button);
@@ -182,7 +144,17 @@ $(function () {
     add_content_from_markdown("#fashionfiesta", "cultural/cosplay.md");
     add_content_from_markdown("#logokiwar", "cultural/logo_ki_war.md");
     add_content_from_markdown("#alliedcabinet", "cultural/callingforduty.md");
-});
+    add_content_from_markdown("#hack", "tech/Hackathon.md");
+    add_content_from_markdown("#puzzlemaster", "tech/puzzlemaster.md");
+    add_content_from_markdown("#spbridge", "tech/spbridge.md");
+    add_content_from_markdown("#autocad", "tech/autocad.md");
+    add_content_from_markdown("#linefollow", "tech/linefollow.md");
+    add_content_from_markdown("#deathrace", "tech/deathrace.md");
+    add_content_from_markdown("#mindyourownbusiness", "tech/mindyourownbusiness.md");
+    add_content_from_markdown("#demolitionman", "tech/DemolitionMan.md");
+    add_content_from_markdown("#designsmackdown", "tech/DesignSmackdown");
+    add_content_from_markdown("#diyhard", "cultural/diyhard.md");
+    });
 
 
 
@@ -274,7 +246,8 @@ function create() {
 		});
 		}
 		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
-	}
+
+   	}
 }
 
 function update() {
