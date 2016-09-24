@@ -182,7 +182,7 @@ var slashes,
  
 function preload() {
 
-	game.load.image("background", "../static/images/fruitNinjaBG.png");
+	game.load.image("background", "../static/images/fruitNinjaBG2.png");
 	
 	game.load.image("pineapple","../static/images/fruit/pineapple.png");
 	game.load.image("apple","../static/images/fruit/apple.png");
@@ -260,7 +260,7 @@ function create() {
 //		}
 		setTimeout(function(){
 		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
-	},1000);
+	},500);
 
    	}
 }
