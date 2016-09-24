@@ -161,13 +161,25 @@ var slashes,
 function preload() {
 
 	game.load.image("background", "../static/images/fruitNinjaBG.png");
+	
 	game.load.image("pineapple","../static/images/fruit/pineapple.png");
 	game.load.image("apple","../static/images/fruit/apple.png");
 	game.load.image("peach","../static/images/fruit/peach.png");
 	game.load.image("kiwi","../static/images/fruit/kiwi.png");
 	game.load.image("pear","../static/images/fruit/pear.png");
 	game.load.image("lemon","../static/images/fruit/lemon.png");
-	game.load.image("squash","../static/images/fruit/squash.png");
+	game.load.image("orange","../static/images/fruit/orange.png");
+	
+	game.load.image("pineappleslice","../static/images/fruit/pineappleslice.png");
+	game.load.image("appleslice","../static/images/fruit/appleslice.png");
+	game.load.image("peachslice","../static/images/fruit/peachslice.png");
+	game.load.image("kiwislice","../static/images/fruit/kiwislice.png");
+	game.load.image("pearslice","../static/images/fruit/pearslice.png");
+	game.load.image("lemonslice","../static/images/fruit/lemonslice.png");
+	game.load.image("orangeslice","../static/images/fruit/orangeslice.png");
+	
+	game.load.image("splash","../static/images/fruit/splash.png");
+	
 
 }
 
@@ -178,14 +190,37 @@ function create() {
 	
 	
 	game.add.tileSprite(0, 0, w, h, 'background');
-	game.add.tileSprite(50, 105, 65, 74, "pineapple");
-	game.add.tileSprite(208, 40, 63, 84, "apple");
-	game.add.tileSprite(398, 56, 65, 57, "peach");
-	game.add.tileSprite(548, 115, 65, 63, "kiwi");
-	game.add.tileSprite(114, 268, 59, 87, "pear");
-	game.add.tileSprite(302, 250, 65, 55, "lemon");
-	game.add.tileSprite(482, 275, 65, 65, "squash");
+	
+	var fruit = new Array();
+	var slices ={"pineapple": 0, "apple": 1, "peach": 2, "kiwi": 3, "pear": 4, "lemon": 5, "orange": 6, 0: "pineappleslice", 1: "appleslice", 2: "peachslice", 3: "kiwislice", 4: "pearslice", 5: "lemonslice", 6: "orangeslice"};
+	
+	fruit[0] = game.add.tileSprite(50, 105, 65, 74, "pineapple");
+	fruit[1] = game.add.tileSprite(208, 40, 63, 84, "apple");
+	fruit[2] = game.add.tileSprite(398, 56, 65, 57, "peach");
+	fruit[3] = game.add.tileSprite(548, 115, 65, 63, "kiwi");
+	fruit[4] = game.add.tileSprite(114, 268, 59, 87, "pear");
+	fruit[5] = game.add.tileSprite(302, 250, 65, 65, "lemon");
+	fruit[6] = game.add.tileSprite(482, 275, 65, 65, "orange");
 	slashes = game.add.graphics(0, 0);
+	
+	var emitter = new Array();
+	for(var j = 0; j<7;j++){
+		emitter[j] = game.add.emitter(0, 0, 100);
+		emitter[j].makeParticles(slices[j]);
+		emitter[j].gravity = 300;
+		emitter[j].setYSpeed(-400,400);
+	}
+	
+	for(var i = 0; i < 7; i++){
+	fruit[i].inputEnabled = true;
+	fruit[i].events.onInputOver.add(over, this);
+	}
+		
+	function over(item) {
+		emitter[slices[item.key]].x = item.x;
+		emitter[slices[item.key]].y = item.y;
+		emitter[slices[item.key]].start(true, 2000, null, 2);
+	}
 }
 
 function update() {
@@ -208,7 +243,6 @@ function update() {
 	slashes.endFill();
 
 }
-
 
 function render() {
 }
