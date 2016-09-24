@@ -1,6 +1,6 @@
 /* Window Draggable */
 $( ".window" ).draggable({ cancel: ".window-content,input,textarea", containment: "parent" });
-
+//var openWin = 0;
 
 
 function attach_button_with_window(button, container){
@@ -13,16 +13,20 @@ function attach_button_with_window(button, container){
   
   
   $(container).find(".close").on('click', function(){
+  	//openWin=0;
   	$(container).toggleClass('hidden');
+  	
   });
 
   $(container).find(".minify").on('click', function(){
+  	//openWin=0;
   	$(container).toggleClass('hidden');
+  	
   });
   
 
   $button.on('click', function () {
-    
+    //openWin=1;
     var buttonOffset = $button.offset();
     var containerOffset = $container.offset();
     
@@ -30,13 +34,14 @@ function attach_button_with_window(button, container){
     var diffY = containerOffset.top - buttonOffset.top - buttonHeight*0.5;
     
     var origin = -diffX + 'px ' + -diffY + 'px';
-    
+    //if(openWin===1){
     $container
         .css({
           transformOrigin: origin  
         })
         .toggleClass('hidden');
-        
+        //}
+  	//openWin=0;
   });
 
 }
@@ -253,7 +258,9 @@ function create() {
 //				$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
 //		});
 //		}
+		setTimeout(function(){
 		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
+	},1000);
 
    	}
 }
