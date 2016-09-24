@@ -240,6 +240,15 @@ function create() {
 	fruit[6] = game.add.tileSprite(482, 275, 65, 65, "orange");
 	slashes = game.add.graphics(0, 0);
 	
+	var hackathonDiv = new Array();
+	hackathonDiv[0] = document.getElementById("hackathon");
+	hackathonDiv[1] = document.getElementById("mathsoc");
+	hackathonDiv[2] = document.getElementById("civilevents");
+	hackathonDiv[3] = document.getElementById("roboticevents");
+	hackathonDiv[4] = document.getElementById("saeevents");
+	hackathonDiv[5] = document.getElementById("mechanicalevents");
+	hackathonDiv[6] = document.getElementById("asme");
+	
 	var emitter = new Array();
 	for(var j = 0; j<7;j++){
 		emitter[j] = game.add.emitter(0, 0, 100);
@@ -257,6 +266,14 @@ function create() {
 		emitter[slices[item.key]].x = item.x;
 		emitter[slices[item.key]].y = item.y;
 		emitter[slices[item.key]].start(true, 2000, null, 2);
+		//render markdown here
+		if($(hackathonDiv[slices[item.key]]) != null){
+			
+				$(hackathonDiv[slices[item.key]]).find(".close").on('click', function(){
+				$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
+		});
+		}
+		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
 	}
 }
 
