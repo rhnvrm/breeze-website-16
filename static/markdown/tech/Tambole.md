@@ -1,0 +1,36 @@
+# Tambola
+
+As a rule, each player must buy AT LEAST one ticket to enter the game. A typical 90 ball Tambola ticket consists of 3 rows and 9 columns which make 27 spaces. Each row has a total of 5 numbers printed on it. A column can have 1, 2 or the maximum 3 numbers printed on it. The first column in the ticket will have numbers from 1-9, the second columnwill have 10-19, third column with 20-29 and so on until the 9th column which will be numbered in between 80-90.
+
+## Prize Money (Cash)
+
+* Overall Prize Money to be Won- Rs. 4000
+
+
+
+## Event Details
+
+| Round | Day | Time | Venue |
+|:-----:|:---:|:----:|:-----:|
+|    1   | Friday |  2 PM to 5 PM | Tent in the Main Field |
+|   2   | Saturday| 2 PM to 5 PM | Tent in the Main Field  |
+
+ 
+## Event Coordinator
+
+**Name:** Riya Dogra
+
+**Phone:** [+91 8130983275](tel:8130983275)
+
+**Email:** [mathsoc@snu.edu.in](mailto:mathsoc@snu.edu.in)
+
+## Rules
+
+* The game begins with a ball draw. As the game progresses, the board is marked with each ball that is drawn. The objective of the game is to mark/ dab all the numbers found in the ticket as called by the dealer. The player who first marks all the numbers in a winning pattern and calls a win is declared as the WINNER of that pattern after the dealer checks his ticket and verify it with numbers drawn.
+* If your claimed winning pattern is wrong, it will be called BOOGY and you cannot continue the game with the same ticket.
+
+
+
+
+**Note:** Event Prize money is subject to change by the organising committee without any prior notice. The decision by the organising committee stands final and binding on all participants.
+
