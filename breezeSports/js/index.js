@@ -68,11 +68,11 @@
                 name: 'Badminton',
                 asset: 'static/badminton.png',
                 prizeMoney: 5000,
-                eventCoordinator: 'Bhogeshwar R',
-                rules: '1. All BWF standard rules to be followed.<br> 2. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.',
+                eventCoordinator: 'Bhogeshwar R(M)<br>Sanjana Maurya(F)',
+                rules: '1. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.<br>2. Each match would be a best of 3 sets (15 points each) during pool stage and 3 sets (21 points each) during semi-finals and finals.<br>3. Time-out of 90 seconds is provided between each set.<br>4. Referee’s decision would be final and binding.<br><b>Service</b><br>1. The shuttle must be hit below the waist with the racquet head below the hand, and the server must have part of both feet stationary in contact with the ground.<br>2. All BWF Rules would be followed. ',
                 venue: 'Badminton court',
                 emailID: 'sports.committee@snu.edu.in',
-                phone: '+91 8686262568',
+                phone: '+91 8686262568(M)<br>+91 9015378953(F)',
                 x: -100,
                 y: -150
             }, {
@@ -80,7 +80,7 @@
                 asset: 'static/cricket.png',
                 prizeMoney: 28000,
                 eventCoordinator: 'Ayush Mehta',
-                rules: '1. Standard ICC rules to be followed.<br> 2. 15 over matches, minus the finals.<br> 3. Coloured kits expected.',
+                rules: '1. ALL ICC RULES TO BE FOLLOWED.<br>2. ALL MATCHES WILL BE OF 15 OVERS EACH EXCEPT FOR FINALS WHICH WILL BE OF 20 OVERS.<br>3.ALL MATCHES WILL BE PLAYED WITH WHITE BALL, SO ALL TEAMS ARE EXPECTED TO COME IN COLORED KITS.<br>',
                 venue: 'Cricket Ground',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9805783738',
@@ -90,22 +90,22 @@
                 name: 'Table Tennis',
                 asset: 'static/tabletennis.png',
                 prizeMoney: 10000,
-                eventCoordinator: 'Kashish Vijay',
-                rules: '1. Standard IITF rules will be followed.<br> 2. 1 tie will consist of 2 singles and 1 doubles match.',
+                eventCoordinator: 'Kashish Vijay(M)<br>Mayuri Jain(F)',
+                rules: '1. Standard IITF rules will be followed.<br> 2. 1 tie will consist of 2 singles and 1 doubles match.<br>3.Each match will be of best of five sets for 11 points each.',
                 venue: 'Sports complex',
                 emailID: 'sports.committee@snu.edu.in',
-                phone: '+91  9409228181',
+                phone: '+91  9409228181(M)<br>+91  9818228330(F)',
                 x: 200,
                 y: 180
             }, {
                 name: 'Basketball',
                 asset: 'static/basketball.png',
                 prizeMoney: 20000,
-                eventCoordinator: 'Harshil Aggarwal',
-                rules: '1. Standard FIBA rules will be followed.<br> 2. Each game consists of four quarters of 10 minutes.',
+                eventCoordinator: 'Harshil Aggarwal(M)<br>Akshita Singh(F)',
+                rules: '1. Each game consists of four quarters of 10 minutes.<br>2. If the scores are tied at the end of the fourth quarter, overtime periods of five minutes will be played until one team has more points than the other (at the end of the 5-minute period).<br>3. All FIBA rules will be followed. ',
                 venue: 'Basketball court',
                 emailID: 'sports.committee@snu.edu.in',
-                phone: '+91 9839562111',
+                phone: '+91 9839562111(M)<br>+91 9910809746(F)',
                 x: -200,
                 y: 180
             }, {
@@ -113,7 +113,7 @@
                 asset: 'static/chess.png',
                 prizeMoney: 10000,
                 eventCoordinator: 'Snehith Reddy',
-                rules: '1. Latest FIDE rules will be followed strictly. In case of any discrepancy, Arbiter’s decision is final.<br>2. The game will be played for 60 minutes, i.e. each player gets 30 minutes to finish their game.',
+                rules: '1. The game will be played between 2 players from different teams.<br>2. A team consists of 3 players who will play, and 1 substitute may be there.<br>3.Pairing will be done by the Swiss Perfect.<br>4. The game will be played for 60 minutes, i.e. each player gets 30 minutes to finish their game.<br>5. Latest FIDE rules will be followed strictly. In case of any discrepancy, Arbiter’s decision is final.<br>',
                 venue: 'Sports complex',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 8374247734',
@@ -123,8 +123,8 @@
                 name: 'Volleyball',
                 asset: 'static/volleyball.png',
                 prizeMoney: 20000,
-                eventCoordinator: 'Shashi Kiran',
-                rules: "1. Each League match will be a best-of-three sets, for 25 points each.<br> 2. The knock-out matches will be a best-of-five sets for 25 points each.<br>3. All rules according to FIVB.<br>",
+                eventCoordinator: 'Shashi Kiran(M)',
+                rules: '1. Each League match will be a best-of-three sets, for 25 points each.<br>2. The knock-out matches will be a best-of-five sets for 25 points each.<br>3. All rules according to FIVB.',       
                 venue: 'Volleyball court',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 8130868769',
@@ -134,11 +134,11 @@
                 name: 'Tennis',
                 asset: 'static/tennis.png',
                 prizeMoney: 10000,
-                eventCoordinator: 'Anmol Chaudhary',
-                rules: '1. All matches will be governed according to the International Tennis Federation.<br> 2. Each tie consists of 3 matches : Singles, Doubles and Reverse Singles.',
+                eventCoordinator: 'Anmol Chaudhary(M) <br>Manognya Gudapati(F)',
+                rules: '1. Each tie is contested in a best-of-three match format.<br>2. It consists of three matches: Singles match, then a doubles match and if the need be a reverse singles match. First team to secure 2 wins off 3 matches wins the tie.<br>3. All matches will be governed by the International Tennis Federation rules.<br>4. Players will be responsible to furnish their own racquets.<br>5. If a player is injured and cannot continue playing, that match will be marked as retired.<br>6. Spectators have no role in making line calls.<br>7. After completing a match a player is allowed to rest up to 20 min before required to play again.',
                 venue: 'Tennis court',
                 emailID: 'sports.committee@snu.edu.in',
-                phone: '+91 9717828889',
+                phone: '+91 9717828889(M)<br>+91 9560968826(F)',
                 x: 0,
                 y: 50
                     // }, {
@@ -353,7 +353,7 @@
         },
         populateCard: function($el, data) {
 
-            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/><button class="ruleButtons zIndex=10">'+data.name+'</button>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
+            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + data.venue + '</li><li><span>Prize money</span><br/>' + data.prizeMoney + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
 
         },
         displayNone: function($el) {

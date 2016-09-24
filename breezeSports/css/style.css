@@ -555,6 +555,9 @@ iframe, object, embed {
   word-wrap:break-word;
   /*display: flex;*/
 }
+#ruleButtons {
+  z-index: 10000;
+}
 .player .player__card .player__card__list li {
   display: inline-block;
   white-space: nowrap;
