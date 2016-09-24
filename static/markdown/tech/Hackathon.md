@@ -1,6 +1,7 @@
 # Hackathon 
 
 An event-typically lasting all day- in which a large number of people meet to engage in collaborative computer programming, with the purpose of building a product/software, usually around a particular theme.
+
 ## Prize Money (Cash)
 
 *  First Prize - 30000

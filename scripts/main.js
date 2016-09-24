@@ -128,7 +128,15 @@ $(function () {
     attach_menubutton_with_window("#menuitem_business", "#businessevents");
     attach_button_with_window("#MUN", "#munevents");
     attach_menubutton_with_window("#menuitem_mun", "#munevents");
-    
+  
+    attach_button_with_window("#menuitem_hackathon", "#hackathon");
+    attach_button_with_window("#menuitem_mathsoc", "#mathsoc");
+    attach_button_with_window("#menuitem_civilevents", "#civilevents");
+    attach_button_with_window("#menuitem_roboticevents", "#roboticevents");
+    attach_button_with_window("#menuitem_saeevents", "#saeevents");
+    attach_button_with_window("#menuitem_mechanicalevents", "#mechanicalevents");
+    attach_button_with_window("#menuitem_asme", "#asme");
+  
     add_content_from_markdown("#warfare", "cultural/warfare.md");
     add_content_from_markdown("#burnout", "cultural/burnout.md");
     add_content_from_markdown("#aagaz", "cultural/aagaaz.md");
@@ -152,8 +160,8 @@ $(function () {
     add_content_from_markdown("#deathrace", "tech/deathrace.md");
     add_content_from_markdown("#mindyourownbusiness", "tech/mindyourownbusiness.md");
     add_content_from_markdown("#demolitionman", "tech/DemolitionMan.md");
-    add_content_from_markdown("#designsmackdown", "tech/DesignSmackdown");
-    add_content_from_markdown("#diyhard", "cultural/diyhard.md");
+    add_content_from_markdown("#designsmackdown", "tech/DesignSmackdown.md");
+    add_content_from_markdown("#diyhard", "tech/diyhard.md");
     });
 
 
@@ -239,12 +247,12 @@ function create() {
 		emitter[slices[item.key]].y = item.y;
 		emitter[slices[item.key]].start(true, 2000, null, 2);
 		//render markdown here
-		if($(hackathonDiv[slices[item.key]]) != null){
-			
-				$(hackathonDiv[slices[item.key]]).find(".close").on('click', function(){
-				$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
-		});
-		}
+//		if($(hackathonDiv[slices[item.key]]) != null){
+//			
+//				$(hackathonDiv[slices[item.key]]).find(".close").on('click', function(){
+//				$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
+//		});
+//		}
 		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
 
    	}
