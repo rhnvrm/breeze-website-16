@@ -108,22 +108,40 @@ $(function () {
 	attach_button_with_window("#about_icon", "#about"); 
     attach_menubutton_with_window("#menuitem_about", "#about");
 	attach_button_with_window("#campus_icon", "#campus_amb");
-    attach_button_with_window("#tech_icon", "#tech");
-	attach_button_with_window("#sports_icon", "#sports");
-	attach_button_with_window("#about_icon", "#about");
+    attach_menubutton_with_window("#menuitem_campamba", "#campus_amb");
     attach_button_with_window("#Music", "#musicevents");
+    attach_menubutton_with_window("#menuitem_music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
+    attach_menubutton_with_window("#menuitem_dance", "#danceevents");
     attach_button_with_window("#Dramatics", "#dramaevents");
+    attach_menubutton_with_window("#menuitem_drama", "#dramaevents");
     attach_button_with_window("#Quizzing", "#quizevents");
+    attach_menubutton_with_window("#menuitem_quiz", "#quizevents");
     attach_button_with_window("#Literature", "#literaryevents");
+    attach_menubutton_with_window("#menuitem_literary", "#literaryevents");
     attach_button_with_window("#ArtandCreativity", "#artevents");
+    attach_menubutton_with_window("#menuitem_art", "#artevents");
     attach_button_with_window("#Business", "#businessevents");
+    attach_menubutton_with_window("#menuitem_business", "#businessevents");
     attach_button_with_window("#MUN", "#munevents");
+    attach_menubutton_with_window("#menuitem_mun", "#munevents");
 
 
     add_content_from_markdown("#warfare", "cultural/warfare.md");
     add_content_from_markdown("#burnout", "cultural/burnout.md");
-
+    add_content_from_markdown("#aagaz", "cultural/aagaaz.md");
+    add_content_from_markdown("#pacman", "cultural/pac_man.md");
+    add_content_from_markdown("#acoustyx", "cultural/acoustyx.md");
+    add_content_from_markdown("#crescendo", "cultural/Crescendo.md");
+    add_content_from_markdown("#nostringsattached", "cultural/nsa.md");
+    add_content_from_markdown("#fps", "cultural/fps.md");
+    add_content_from_markdown("#madhat", "cultural/mad_hat.md");
+    add_content_from_markdown("#reporto", "cultural/report_repertoire.md");
+    add_content_from_markdown("#snipthrusnaps", "cultural/snip-thru-snaps.md");
+    add_content_from_markdown("#tbd", "cultural/tbd_collab.md");
+    add_content_from_markdown("#fashionfiesta", "cultural/cosplay.md");
+    add_content_from_markdown("#logokiwar", "cultural/logo_ki_war.md");
+    add_content_from_markdown("#alliedcabinet", "cultural/callingforduty.md");
 });
 
 

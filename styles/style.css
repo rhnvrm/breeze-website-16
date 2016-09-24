@@ -359,7 +359,7 @@ html {
   height: calc(100% - 38px);
   width: 100%;
   overflow: scroll;
-  color: #fff;
+/*  color: #fff;*/
   border-radius: 0 0 6px 6px;
   font-family: Monaco, MonoSpace;
 }
@@ -699,7 +699,7 @@ html {
   height:66%;
 }
 
-#aboutwindow{
+#removescroll{
   overflow: hidden;
 }
 
