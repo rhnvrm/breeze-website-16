@@ -144,7 +144,17 @@ $(function () {
     add_content_from_markdown("#fashionfiesta", "cultural/cosplay.md");
     add_content_from_markdown("#logokiwar", "cultural/logo_ki_war.md");
     add_content_from_markdown("#alliedcabinet", "cultural/callingforduty.md");
-});
+    add_content_from_markdown("#hack", "tech/Hackathon.md");
+    add_content_from_markdown("#puzzlemaster", "tech/puzzlemaster.md");
+    add_content_from_markdown("#spbridge", "tech/spbridge.md");
+    add_content_from_markdown("#autocad", "tech/autocad.md");
+    add_content_from_markdown("#linefollow", "tech/linefollow.md");
+    add_content_from_markdown("#deathrace", "tech/deathrace.md");
+    add_content_from_markdown("#mindyourownbusiness", "tech/mindyourownbusiness.md");
+    add_content_from_markdown("#demolitionman", "tech/DemolitionMan.md");
+    add_content_from_markdown("#designsmackdown", "tech/DesignSmackdown");
+    add_content_from_markdown("#diyhard", "cultural/diyhard.md");
+    });
 
 
 
