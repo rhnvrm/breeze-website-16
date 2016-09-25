@@ -353,7 +353,7 @@
         },
         populateCard: function($el, data) {
 
-            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
+            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money (in INR)</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
 
         },
         displayNone: function($el) {
