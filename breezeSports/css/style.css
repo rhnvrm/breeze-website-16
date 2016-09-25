@@ -769,9 +769,8 @@ embed
     /*word-wrap:break-word;*/
     margin-top: 150px;
     margin-bottom: 250px;
-
     text-transform: uppercase;
-
+    padding : 5em;
     color: #aaa;
     /*position:relative;*/
     /*width: 600px;*/
@@ -782,7 +781,8 @@ embed
 .player .player__card .player__card__list li:first-child
 {
     z-index: 1000;
-
+    text-align: center;
+    padding-left: 5em;
     /*float: inherit;*/
     /*word-wrap:break-word;*/
     font-size:12px;
@@ -801,7 +801,7 @@ embed
     position: absolute;
     z-index: -10;
     bottom: 0;
-
+    text-align: center;
     overflow: hidden;
 
     width: 100%;
