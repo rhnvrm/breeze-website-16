@@ -768,7 +768,7 @@ embed
     height: 100%;
     /*word-wrap:break-word;*/
     margin-top: 150px;
-    margin-bottom: 190px;
+    margin-bottom: 250px;
 
     text-transform: uppercase;
 
@@ -807,7 +807,7 @@ embed
     width: 100%;
     /*margin-top:65px;*/
     margin: 0;
-    margin-top: 100px;
+    margin-top: 150px;
     /*margin-top: 10px;*/
     margin-right: -50px;
     /*margin-right:50px;*/
@@ -828,7 +828,7 @@ embed
     float: top;
 
     width: 50%;
-    margin-top: -35px;
+    margin-top: -65px;
     padding: 10px 0 20px 0;
 
     word-wrap: break-word;
@@ -838,6 +838,8 @@ embed
 .player .player__card .player__card__list--last li:last-child
 {
     border-left: solid 1px #ddd;
+    margin-bottom: -50px;
+    margin-top:50px;
 }
 .player *
 {
