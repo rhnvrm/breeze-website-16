@@ -56,7 +56,7 @@ html {
 
 @media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../static/images/wallpaper.jpg') center center / cover no-repeat;
+    background: url('../static/images/wallpaper.png') center center / cover no-repeat;
   }
 
   .fullscreen-bg__video {
@@ -283,9 +283,9 @@ html {
 
 .window{
 	position: absolute;
-	top: 7%;
+	top: 5%;
 	left: 5%;
-  height: 66%;
+  height: 85%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -686,7 +686,7 @@ html {
             filter: brightness(1);
   }
 }
-
+/*
 #musicevents{
   height:95%;
   width:100%;
@@ -796,10 +796,12 @@ html {
   top:24px;
   left:450px;
 }
+*/
 
 #removescroll{
   overflow: hidden;
 }
+
 
 /* Top Bar */
 
@@ -962,10 +964,9 @@ table th, table td:before {
     font-family: "Courier";
     font-size: 20px;
     margin: 10px 0 0 10px;
-    white-space: nowrap;
     overflow: hidden;
-    width: 30em;
     animation: type 4s steps(60, end); 
+    padding: 10px;
 }
 
 #about_typer  p:nth-child(2){
@@ -975,6 +976,7 @@ table th, table td:before {
 #about_typer  p a{
     color: lime;
     text-decoration: none;
+    word-break: break-all
 }
 
 #about_typer  span{

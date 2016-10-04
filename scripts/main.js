@@ -310,7 +310,7 @@ function render() {
 
   window.requestAnimationFrame = requestAnimationFrame;
 
-  img.src = 'static/images/breeze-white-small.png';
+  img.src = 'static/images/breeze-white-small-shadow.png';
   img.onload = function() {
     init();
     glitchAnimation();
@@ -341,7 +341,7 @@ function render() {
         height);
       imgData = ctx.getImageData(0, 0, width, height);
 
-      imgData = pixelProcessor(imgData, 4, pixelCooler);
+      //imgData = pixelProcessor(imgData, 2, pixelCooler);
 
       ctx.putImageData(imgData, 0, 0);
 
@@ -350,7 +350,7 @@ function render() {
 
     if (currentFrame === randInt(0, totalFrame)) {
 
-      imgData = pixelProcessor(imgData, 1, pixelFlick);
+      //imgData = pixelProcessor(imgData, 1, pixelFlick);
 
       ctx.putImageData(imgData, 0, 0);
 
