@@ -120,7 +120,7 @@ $(function () {
     attach_menubutton_with_window("#menuitem_about", "#about");
 	attach_button_with_window("#campus_icon", "#campus_amb");
     attach_menubutton_with_window("#menuitem_campamba", "#campus_amb");
-    attach_button_with_window("#Music", "#musicevents");
+    attach_button_with_window("#Music", "#culturalevents");
     attach_menubutton_with_window("#menuitem_music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");
     attach_menubutton_with_window("#menuitem_dance", "#danceevents");
@@ -150,7 +150,7 @@ $(function () {
     add_content_from_markdown("#aagaz", "cultural/aagaaz.md");
     add_content_from_markdown("#pacman", "cultural/pac_man.md");
     add_content_from_markdown("#acoustyx", "cultural/acoustyx.md");
-    add_content_from_markdown("#crescendo", "cultural/Crescendo.md");
+    add_content_from_markdown("#ME", "cultural/Crescendo.md");
     add_content_from_markdown("#nostringsattached", "cultural/nsa.md");
     add_content_from_markdown("#fps", "cultural/fps.md");
     add_content_from_markdown("#madhat", "cultural/mad_hat.md");
