@@ -67,7 +67,7 @@
             }, {
                 name: 'Badminton',
                 asset: 'static/badminton.png',
-                prizeMoney: "I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 • II. 5000",
                 eventCoordinator: 'Bhogeshwar R(M)<br>Sanjana Maurya(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10AM.</u> <br>1. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.<br>2. Each match would be a best of 3 sets (15 points each) during pool stage and 3 sets (21 points each) during semi-finals and finals.<br>3. Time-out of 90 seconds is provided between each set.<br>4. Referee’s decision would be final and binding.<br><b>Service</b><br>1. The shuttle must be hit below the waist with the racquet head below the hand, and the server must have part of both feet stationary in contact with the ground.<br>2. All BWF Rules would be followed. ',
                 venue: 'Badminton court',
@@ -89,7 +89,7 @@
             }, {
                 name: 'Table Tennis',
                 asset: 'static/tabletennis.png',
-                prizeMoney: "I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 • II. 5000",
                 eventCoordinator: 'Kashish Vijay(M)<br>Mayuri Jain(F)',
                 rules: '<u> Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Standard IITF rules will be followed.<br> 2. 1 tie will consist of 2 singles and 1 doubles match.<br>3.Each match will be of best of five sets for 11 points each.',
                 venue: 'Sports complex',
@@ -100,7 +100,7 @@
             }, {
                 name: 'Basketball',
                 asset: 'static/basketball.png',
-                prizeMoney: "I. 20000 • II. 12000",
+                prizeMoney: "   I. 20000 • II. 12000",
                 eventCoordinator: 'Harshil Aggarwal(M)<br>Akshita Singh(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10AM.</u><br>1. Each game consists of four quarters of 10 minutes.<br>2. If the scores are tied at the end of the fourth quarter, overtime periods of five minutes will be played until one team has more points than the other (at the end of the 5-minute period).<br>3. All FIBA rules will be followed. ',
                 venue: 'Basketball court',
@@ -133,14 +133,14 @@
             }, {
                 name: 'Tennis',
                 asset: 'static/tennis.png',
-                prizeMoney: "I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 • II. 5000",
                 eventCoordinator: 'Anmol Chaudhary(M) <br>Manognya Gudapati(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Each tie is contested in a best-of-three match format.<br>2. It consists of three matches: Singles match, then a doubles match and if the need be a reverse singles match. First team to secure 2 wins off 3 matches wins the tie.<br>3. All matches will be governed by the International Tennis Federation rules.<br>4. Players will be responsible to furnish their own racquets.<br>5. If a player is injured and cannot continue playing, that match will be marked as retired.<br>6. Spectators have no role in making line calls.<br>7. After completing a match a player is allowed to rest up to 20 min before required to play again.',
                 venue: 'Tennis court',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9717828889(M)<br>+91 9560968826(F)',
                 x: 0,
-                y: 50
+                y: -85
                     // }, {
                     //   name: 'Lacrosse',
                     //   asset: 'bm-neuer.jpg',
@@ -353,7 +353,7 @@
         },
         populateCard: function($el, data) {
 
-            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Contact no.</span><br/>' + data.phone + '</li><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
+            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money (in INR)</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li><li><span>Phone</span><br/>' + data.phone + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
 
         },
         displayNone: function($el) {

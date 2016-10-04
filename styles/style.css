@@ -585,6 +585,9 @@ html {
 #MUN{
   background: url("../static/images/solitaire/munCard.png");
 }
+#Treasure{
+  background: url("../static/images/solitaire/treasureCard.png");
+}
 
 /* Glitch */
 
