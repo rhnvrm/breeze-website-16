@@ -92,6 +92,10 @@ $('.menubar li').hover(
   }
 );
 
+$('.cardcontainer').on('mouseover', function () {
+  $('.fillercard').toggleClass('flipped');
+});
+
 
 function add_content_from_markdown(id, file){
 
