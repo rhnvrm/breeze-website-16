@@ -140,7 +140,7 @@
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9717828889(M)<br>+91 9560968826(F)',
                 x: 0,
-                y: -135
+                y: -85
                     // }, {
                     //   name: 'Lacrosse',
                     //   asset: 'bm-neuer.jpg',
