@@ -252,9 +252,9 @@ html {
 .window{
 	position: absolute;
 	top: 7%;
-	left: 25%;
+	left: 5%;
   height: 66%;
-  width: 50%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   
@@ -266,7 +266,7 @@ html {
   -moz-transition: transform 0.10s;
   transition: transform 0.10s;
 
-  background: #ececec;
+  background: #000;
 }
 .window.hidden {
   -ms-transform: scale(0) perspective(370px) rotateX(50deg);

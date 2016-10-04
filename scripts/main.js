@@ -35,6 +35,9 @@ function attach_button_with_window(button, container){
     
     var origin = -diffX + 'px ' + -diffY + 'px';
     //if(openWin===1){
+
+    $('.window').addClass('hidden');
+
     $container
         .css({
           transformOrigin: origin  
@@ -182,25 +185,25 @@ var slashes,
  
 function preload() {
 
-	game.load.image("background", "../static/images/fruitNinjaBG2.png");
+	game.load.image("background", "static/images/fruitNinjaBG2.png");
 	
-	game.load.image("pineapple","../static/images/fruit/pineapple.png");
-	game.load.image("apple","../static/images/fruit/apple.png");
-	game.load.image("peach","../static/images/fruit/peach.png");
-	game.load.image("kiwi","../static/images/fruit/kiwi.png");
-	game.load.image("pear","../static/images/fruit/pear.png");
-	game.load.image("lemon","../static/images/fruit/lemon.png");
-	game.load.image("orange","../static/images/fruit/orange.png");
+	game.load.image("pineapple","static/images/fruit/pineapple.png");
+	game.load.image("apple","static/images/fruit/apple.png");
+	game.load.image("peach","static/images/fruit/peach.png");
+	game.load.image("kiwi","static/images/fruit/kiwi.png");
+	game.load.image("pear","static/images/fruit/pear.png");
+	game.load.image("lemon","static/images/fruit/lemon.png");
+	game.load.image("orange","static/images/fruit/orange.png");
 	
-	game.load.image("pineappleslice","../static/images/fruit/pineappleslice.png");
-	game.load.image("appleslice","../static/images/fruit/appleslice.png");
-	game.load.image("peachslice","../static/images/fruit/peachslice.png");
-	game.load.image("kiwislice","../static/images/fruit/kiwislice.png");
-	game.load.image("pearslice","../static/images/fruit/pearslice.png");
-	game.load.image("lemonslice","../static/images/fruit/lemonslice.png");
-	game.load.image("orangeslice","../static/images/fruit/orangeslice.png");
+	game.load.image("pineappleslice","static/images/fruit/pineappleslice.png");
+	game.load.image("appleslice","static/images/fruit/appleslice.png");
+	game.load.image("peachslice","static/images/fruit/peachslice.png");
+	game.load.image("kiwislice","static/images/fruit/kiwislice.png");
+	game.load.image("pearslice","static/images/fruit/pearslice.png");
+	game.load.image("lemonslice","static/images/fruit/lemonslice.png");
+	game.load.image("orangeslice","static/images/fruit/orangeslice.png");
 	
-	game.load.image("splash","../static/images/fruit/splash.png");
+	game.load.image("splash","static/images/fruit/splash.png");
 	
 
 }
@@ -260,7 +263,7 @@ function create() {
 //		}
 		setTimeout(function(){
 		$(hackathonDiv[slices[item.key]]).toggleClass('hidden');
-	},500);
+	},1000);
 
    	}
 }
