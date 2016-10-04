@@ -1,7 +1,6 @@
 h1,h2,h3{
   text-align: center;
 }
-@import 'https://fonts.googleapis.com/css?family=David+Libre';
 p{
   text-align: justify;
   font-family: 'David Libre', serif;
@@ -298,7 +297,7 @@ html {
   -moz-transition: transform 0.10s;
   transition: transform 0.10s;
 
-  background: #000;
+  background: #dfdfdf;
 }
 .window.hidden {
   -ms-transform: scale(0) perspective(370px) rotateX(50deg);
@@ -323,7 +322,7 @@ html {
   background: linear-gradient(#ebebeb, #cecdce);
   border-top: 1px solid #f4f3f4;
   border-bottom: 1px solid #afaeaf;
-
+  border-radius: 4px 4px 0 0;
   text-align: center;
   font-size: 13px;
   color: #676767;
@@ -403,6 +402,7 @@ html {
 /*  color: #fff;*/
   border-radius: 0 0 6px 6px;
   font-family: Monaco, MonoSpace;
+    white-space: nowrap;
 }
 
 .column {
@@ -469,13 +469,12 @@ html {
   -ms-perspective: 800px;
   perspective: 800px;
   border-radius: 4px;
-  padding: 5px;
-  margin: 2px;
+  padding: 25px;
+  margin: 15px;
 }
 
 .eventcardcontainer {
-  
-  float: left;
+  display: inline-block;
   width: 448px;
   height: 98%;
   position: relative;
@@ -483,19 +482,98 @@ html {
   -ms-perspective: 800px;
   perspective: 800px;
   border-radius: 10px;
-  padding: 5px;
+  padding: 25px;
   margin: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
   overflow: scroll;
   border-style: solid;
-  border-color: cadetblue;
-  background-color: white;
-/*  box-shadow: 2px 2px 2px #888888;*/
+  border-color: #e8e8e8;
+  background-color: #fbf7f4;
+  box-shadow: 2px 2px 2px #888888;
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;
+}
+
+.eventcardcontainer h1,h2,h3,h4,h5,h6 {
+  font-family: 'Pacifico', serif;
+}
+
+.eventcardcontainer {
+  font-family: 'Cormorant Garamond', serif !important; 
+}
+
+.eventcardcontainer p{
+  font-family: 'Cormorant Garamond', serif !important; 
 }
 
 
-.card {
-  
+.eventcardcontainer a {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.eventcardcontainer a:hover{
+  background-color: white;
+  color:black;
+}
+
+#Dance{
+  background: url("../static/images/solitaire/danceCard.png");
+    background-repeat: no-repeat;
+}
+#Music{
+  background: url("../static/images/solitaire/musicCard.png");
+    background-repeat: no-repeat;
+}
+#Dramatics{
+  background: url("../static/images/solitaire/dramaticCard.png");
+    background-repeat: no-repeat;
+}
+#Quizzing{
   background: url("../static/images/solitaire/quizCard.png");
+    background-repeat: no-repeat;
+}
+#Literature{
+  background: url("../static/images/solitaire/literaryCard.png");
+    background-repeat: no-repeat;
+}
+#ArtandCreativity{
+  background: url("../static/images/solitaire/artCard.png");
+    background-repeat: no-repeat;
+}
+#Business{
+  background: url("../static/images/solitaire/businessCard.png");
+    background-repeat: no-repeat;
+}
+#MUN{
+  background: url("../static/images/solitaire/munCard.png");
+    background-repeat: no-repeat;
+}
+#Treasure{
+  background: url("../static/images/solitaire/treasureCard.png");
+    background-repeat: no-repeat;
+}
+#filler{
+  background: url("../static/images/solitaire/filler1.png");
+    background-repeat: no-repeat;
+}
+
+.card {
+
   width: 100%;
   height: 100%;
   position: absolute;
@@ -516,7 +594,7 @@ html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 6px;
-  background: #fff;
+  background: rgba(0,0,0,0);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -555,7 +633,6 @@ html {
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 6px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   cursor: pointer;
 }
 
@@ -607,36 +684,7 @@ html {
 	z-index: 1;
 } */
 
-#Dance{
-  background: url("../static/images/solitaire/danceCard.png");
-}
-#Music{
-  background: url("../static/images/solitaire/musicCard.png");
-}
-#Dramatics{
-  background: url("../static/images/solitaire/dramaticCard.png");
-}
-#Quizzing{
-  background: url("../static/images/solitaire/quizCard.png");
-}
-#Literature{
-  background: url("../static/images/solitaire/literaryCard.png");
-}
-#ArtandCreativity{
-  background: url("../static/images/solitaire/artCard.png");
-}
-#Business{
-  background: url("../static/images/solitaire/businessCard.png");
-}
-#MUN{
-  background: url("../static/images/solitaire/munCard.png");
-}
-#Treasure{
-  background: url("../static/images/solitaire/treasureCard.png");
-}
-#filler{
-  background: url("../static/images/solitaire/filler1.png");
-}
+
 
 /* Glitch */
 
@@ -950,7 +998,7 @@ table th, table td {
 }
 
 table {
-  background: #34495E;
+  background: #441818;
   color: #fff;
   border-radius: .4em;
   overflow: hidden;
