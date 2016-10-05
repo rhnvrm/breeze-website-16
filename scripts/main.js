@@ -122,8 +122,12 @@ $(function () {
     attach_menubutton_with_window("#menuitem_sports", "#sports");
 	attach_button_with_window("#about_icon", "#about"); 
     attach_menubutton_with_window("#menuitem_about", "#about");
-	attach_button_with_window("#campus_icon", "#campus_amb");
+    attach_button_with_window("#campus_icon", "#campus_amb");
     attach_menubutton_with_window("#menuitem_campamba", "#campus_amb");
+    attach_button_with_window("#transport_icon", "#transport");
+    attach_menubutton_with_window("#menuitem_transport", "#transport");
+    attach_button_with_window("#accomodation_icon", "#accomodation");
+    attach_menubutton_with_window("#menuitem_accomodaton", "#accomodation");
     attach_button_with_window("#Music", "#culturalevents");
     attach_menubutton_with_window("#menuitem_music", "#musicevents");
     attach_button_with_window("#Dance", "#danceevents");

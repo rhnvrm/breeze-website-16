@@ -56,10 +56,10 @@
             home: [{
                 name: 'Football',
                 asset: 'static/football.png',
-                prizeMoney: "I. 24000 • II. 14000",
+                prizeMoney: "I. 24000 <br> II. 14000",
                 eventCoordinator: 'Shradhey Prasad',
                 rules: '<u>Date : 4.11.16, Friday, 10AM.</u><br>1. Standard rules apply.<br>2. 11 a side football matches.<br>3. Group stages - 25/5/5 minutes, Knockouts - 35/5/35 minutes.',
-                venue: 'Football Ground',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+919650331064',
                 x: 0,
@@ -67,10 +67,10 @@
             }, {
                 name: 'Badminton',
                 asset: 'static/badminton.png',
-                prizeMoney: "   I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 <br> II. 5000",
                 eventCoordinator: 'Bhogeshwar R(M)<br>Sanjana Maurya(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10AM.</u> <br>1. Each tie would consist of three matches, First singles, Doubles, Reverse Singles, in that order.<br>2. Each match would be a best of 3 sets (15 points each) during pool stage and 3 sets (21 points each) during semi-finals and finals.<br>3. Time-out of 90 seconds is provided between each set.<br>4. Referee’s decision would be final and binding.<br><b>Service</b><br>1. The shuttle must be hit below the waist with the racquet head below the hand, and the server must have part of both feet stationary in contact with the ground.<br>2. All BWF Rules would be followed. ',
-                venue: 'Badminton court',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 8686262568(M)<br>+91 9015378953(F)',
                 x: -100,
@@ -78,10 +78,10 @@
             }, {
                 name: 'Cricket',
                 asset: 'static/cricket.png',
-                prizeMoney: "I. 28000 • II. 14000",
+                prizeMoney: "I. 28000 <br> II. 14000",
                 eventCoordinator: 'Ayush Mehta',
                 rules: '<u>Date : 3.11.16, Thursday, 7:00 A.M</u><br>1. ALL ICC RULES TO BE FOLLOWED.<br>2. ALL MATCHES WILL BE OF 15 OVERS EACH EXCEPT FOR FINALS WHICH WILL BE OF 20 OVERS.<br>3.ALL MATCHES WILL BE PLAYED WITH WHITE BALL, SO ALL TEAMS ARE EXPECTED TO COME IN COLORED KITS.<br>',
-                venue: 'Cricket Ground',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9805783738',
                 x: 100,
@@ -89,10 +89,10 @@
             }, {
                 name: 'Table Tennis',
                 asset: 'static/tabletennis.png',
-                prizeMoney: "   I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 <br> II. 5000",
                 eventCoordinator: 'Kashish Vijay(M)<br>Mayuri Jain(F)',
                 rules: '<u> Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Standard IITF rules will be followed.<br> 2. 1 tie will consist of 2 singles and 1 doubles match.<br>3.Each match will be of best of five sets for 11 points each.',
-                venue: 'Sports complex',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91  9409228181(M)<br>+91  9818228330(F)',
                 x: 200,
@@ -100,10 +100,10 @@
             }, {
                 name: 'Basketball',
                 asset: 'static/basketball.png',
-                prizeMoney: "   I. 20000 • II. 12000",
+                prizeMoney: "   I. 20000 <br> II. 12000",
                 eventCoordinator: 'Harshil Aggarwal(M)<br>Akshita Singh(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10AM.</u><br>1. Each game consists of four quarters of 10 minutes.<br>2. If the scores are tied at the end of the fourth quarter, overtime periods of five minutes will be played until one team has more points than the other (at the end of the 5-minute period).<br>3. All FIBA rules will be followed. ',
-                venue: 'Basketball court',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9839562111(M)<br>+91 9910809746(F)',
                 x: -200,
@@ -111,10 +111,10 @@
             }, {
                 name: 'Chess',
                 asset: 'static/chess.png',
-                prizeMoney: "I. 10000 • II. 5000",
+                prizeMoney: "I. 10000 <br> II. 5000",
                 eventCoordinator: 'Snehith Reddy',
                 rules: '<u>Date: 4.11.16, Friday, 10AM.</u><br>1. The game will be played between 2 players from different teams.<br>2. A team consists of 3 players who will play, and 1 substitute may be there.<br>3.Pairing will be done by the Swiss Perfect.<br>4. The game will be played for 60 minutes, i.e. each player gets 30 minutes to finish their game.<br>5. Latest FIDE rules will be followed strictly. In case of any discrepancy, Arbiter’s decision is final.<br>',
-                venue: 'Sports complex/D006',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 8374247734',
                 x: 150,
@@ -122,10 +122,10 @@
             }, {
                 name: 'Volleyball',
                 asset: 'static/volleyball.png',
-                prizeMoney: "I. 20000 • II. 12000",
+                prizeMoney: "I. 20000 <br> II. 12000",
                 eventCoordinator: 'Shashi Kiran(M)',
                 rules: '<u>Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Each League match will be a best-of-three sets, for 25 points each.<br>2. The knock-out matches will be a best-of-five sets for 25 points each.<br>3. All rules according to FIVB.',       
-                venue: 'Volleyball court',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 8130868769',
                 x: -150,
@@ -133,14 +133,14 @@
             }, {
                 name: 'Tennis',
                 asset: 'static/tennis.png',
-                prizeMoney: "   I. 10000 • II. 5000",
+                prizeMoney: "   I. 10000 <br> II. 5000",
                 eventCoordinator: 'Anmol Chaudhary(M) <br>Manognya Gudapati(F)',
                 rules: '<u>Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Each tie is contested in a best-of-three match format.<br>2. It consists of three matches: Singles match, then a doubles match and if the need be a reverse singles match. First team to secure 2 wins off 3 matches wins the tie.<br>3. All matches will be governed by the International Tennis Federation rules.<br>4. Players will be responsible to furnish their own racquets.<br>5. If a player is injured and cannot continue playing, that match will be marked as retired.<br>6. Spectators have no role in making line calls.<br>7. After completing a match a player is allowed to rest up to 20 min before required to play again.',
-                venue: 'Tennis court',
+                venue: 'Rs 1000',
                 emailID: 'sports.committee@snu.edu.in',
                 phone: '+91 9717828889(M)<br>+91 9560968826(F)',
                 x: 0,
-                y: -85
+                y: 150
                     // }, {
                     //   name: 'Lacrosse',
                     //   asset: 'bm-neuer.jpg',
@@ -156,122 +156,7 @@
             }],
 
             //not really needed, all redundant players, remove them or just hide the switch?
-            away: [{
-                name: 'Football',
-                asset: 'bm-neuer.jpg',
-                prizeMoney: 5000,
-                eventCoordinator: 'Prerak',
-                rules: 'Standard',
-                venue: 'Football Ground',
-                emailID: 'emailID',
-                phone: 'phone',
-                x: 0,
-                y: 410
-            }, {
-                name: 'Badminton',
-                asset: 'bm-neuer.jpg',
-                prizeMoney: 5000,
-                eventCoordinator: 'Prerak',
-                rules: 'Standard',
-                venue: 'Football Ground',
-                emailID: 'emailID',
-                phone: 'phone',
-                x: -100,
-                y: 300
-            }, {
-                name: 'Cricket',
-                asset: 'bm-neuer.jpg',
-                prizeMoney: 5000,
-                eventCoordinator: 'Prerak',
-                rules: 'Standard',
-                venue: 'Football Ground',
-                emailID: 'emailID',
-                phone: 'phone',
-                x: 100,
-                y: 300
-            }, {
-                name: 'Table Tennis',
-                asset: 'bm-neuer.jpg',
-                prizeMoney: 5000,
-                eventCoordinator: 'Prerak',
-                rules: 'Standard',
-                venue: 'Football Ground',
-                emailID: 'emailID',
-                phone: 'phone',
-                x: 200,
-                y: 180
-            }, {
-                name: 'Basketball',
-                asset: 'bm-neuer.jpg',
-                prizeMoney: 5000,
-                eventCoordinator: 'Prerak',
-                rules: 'Standard',
-                venue: 'Football Ground',
-                emailID: 'emailID',
-                phone: 'phone',
-                x: -200,
-                y: 180
-                    // }, {
-                    //   name: 'Modric',
-                    //   asset: 'rm-modric.jpg',
-                    //   origin: 'Croatia',
-                    //   height: '1.74m',
-                    //   shirt: '19',
-                    //   pos: 'Midfield',
-                    //   dob: '30',
-                    //   goals: 5,
-                    //   games: 27,
-                    //   x: -200,
-                    //   y: 180
-                    // }, {
-                    //   name: 'Nacho',
-                    //   asset: 'rm-nacho.jpg',
-                    //   origin: 'Germany',
-                    //   height: '1.79',
-                    //   shirt: '18',
-                    //   pos: 'Defence',
-                    //   dob: '25',
-                    //   goals: 2,
-                    //   games: 25,
-                    //   x: 200,
-                    //   y: 180
-                    // }, {
-                    //   name: 'Ramos',
-                    //   asset: 'rm-ramos.jpg',
-                    //   origin: 'Spain',
-                    //   height: '1.83m',
-                    //   shirt: '4',
-                    //   pos: 'Defence',
-                    //   dob: '31',
-                    //   goals: 21,
-                    //   games: 1,
-                    //   x: 100,
-                    //   y: 300
-                    // }, {
-                    //   name: 'Pepe',
-                    //   asset: 'rm-pepe.jpg',
-                    //   origin: 'Brazil',
-                    //   height: '1.88m',
-                    //   shirt: '3',
-                    //   pos: 'Defence',
-                    //   dob: '32',
-                    //   goals: 0,
-                    //   games: 34,
-                    //   x: -100,
-                    //   y: 300
-                    // }, {
-                    //   name: 'Casillas',
-                    //   asset: 'rm-casillas.jpg',
-                    //   origin: 'Spain',
-                    //   height: '1.85m',
-                    //   shirt: '1',
-                    //   pos: 'Goalie',
-                    //   dob: '34',
-                    //   goals: 0,
-                    //   games: 48,
-                    //   x: 0,
-                    //   y: 410
-            }]
+            away: []
         }
     };
 
@@ -353,7 +238,7 @@
         },
         populateCard: function($el, data) {
 
-            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Venue</span><br/>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money (in INR)</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li><li><span>Phone</span><br/>' + data.phone + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
+            return $el.append('<h3>' + data.name + '</h3>' + '<ul class="player__card__list"><li><span>Reg. Cost</span>' + '<h2>'+data.venue+'</h2>' + '</li><li><span>Prize money (in INR)</span><br/>' + '<h2>'+data.prizeMoney+'</h2>' + '</li><li><span></span><br/></li></ul><br/><br/><br/>' + '<ul class="player__card__list player__card__list--last"><li><span>Coordinator</span><br/>' + data.eventCoordinator + '</li><li><span>Phone</span><br/>' + data.phone + '</li></ul><br><h3>' + data.rules + '</h3>') /*.append('<ul class = "player__card__list--last"><li><span>Event coordinator</span><br/>'+data.eventCoordinator)*/ ;
 
         },
         displayNone: function($el) {

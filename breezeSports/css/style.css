@@ -683,7 +683,7 @@ embed
     padding: 15px 30px 40px;
 
     text-align: center;
-    text-transform: uppercase;
+    
 
     color: #333;
     color: #fff;
@@ -769,7 +769,8 @@ embed
     /*word-wrap:break-word;*/
     margin-top: 150px;
     margin-bottom: 250px;
-    text-transform: uppercase;
+
+
     padding : 5em;
     color: #aaa;
     /*position:relative;*/

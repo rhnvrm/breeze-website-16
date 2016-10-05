@@ -402,7 +402,7 @@ html {
 /*  color: #fff;*/
   border-radius: 0 0 6px 6px;
   font-family: Monaco, MonoSpace;
-    white-space: nowrap;
+
 }
 
 .column {
@@ -998,8 +998,6 @@ table th, table td {
 }
 
 table {
-  background: #441818;
-  color: #fff;
   border-radius: .4em;
   overflow: hidden;
 }
@@ -1015,7 +1013,7 @@ table th, table td {
   }
 }
 table th, table td:before {
-  color: #dd5;
+  
 }
 
 #about_typer{
