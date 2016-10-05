@@ -569,10 +569,7 @@ html {
   background: url("../static/images/solitaire/treasureCard.png");
     background-repeat: no-repeat;
 }
-#filler{
-  background: url("../static/images/solitaire/filler1.png");
-    background-repeat: no-repeat;
-}
+
 
 .card {
 
@@ -619,6 +616,12 @@ html {
 .fillercard .back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
+  background: url("../static/images/solitaire/filler3.png");
+  background-repeat: no-repeat;
+}
+.fillercard .front {
+  background: url("../static/images/solitaire/filler1.png");
+  background-repeat: no-repeat;
 }
 .fillercard.flipped {
   -webkit-transform: rotateY(180deg);
