@@ -92,7 +92,7 @@ $('.menubar li').hover(
   }
 );
 
-$('.cardcontainer').on('mouseover', function () {
+$('.fillercard').on('mouseover', function () {
   $('.fillercard').toggleClass('flipped');
 });
 

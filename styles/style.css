@@ -1,6 +1,7 @@
 h1,h2,h3{
   text-align: center;
 }
+@import 'https://fonts.googleapis.com/css?family=David+Libre';
 p{
   text-align: justify;
   font-family: 'David Libre', serif;
@@ -998,6 +999,8 @@ table th, table td {
 }
 
 table {
+  background: #34495E;
+  color: #fff;
   border-radius: .4em;
   overflow: hidden;
 }
@@ -1013,7 +1016,7 @@ table th, table td {
   }
 }
 table th, table td:before {
-  
+  color: #dd5;
 }
 
 #about_typer{
