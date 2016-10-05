@@ -22,6 +22,7 @@ body
     font-family: 'Open Sans', helvetica, arial, sans-serif;
 
     background-image: -webkit-radial-gradient(ellipse, #2a437c 0, #10203b 100%);
+    background-image: -moz-radial-gradient(ellipse, #2a437c 0, #10203b 100%);
 }
 main
 {
@@ -60,6 +61,41 @@ main
 {
     background: rgba(135,135,135,.3);
 }
+
+::-moz-scrollbar
+{
+    width: 8px; /* 1px wider than Lion. */
+    height: 8px;
+
+    -moz-border-radius: 100px;
+    /* This is more usable for users trying to click it. */
+    background-color: rgba(135,135,135,.3);
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-moz-scrollbar:hover
+{
+    background-color: rgba(0, 0, 0, .09);
+}
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-moz-scrollbar-thumb:vertical
+{
+    -webkit-border-radius: 100px;
+    /* This is the EXACT color of Mac OS scrollbars. 
+     Yes, I pulled out digital color meter */
+    background: rgba(0,0,0,.5);
+}
+::-moz-scrollbar-thumb:vertical:active
+{
+    -moz-border-radius: 100px;
+    background: rgba(0,0,0,.61); /* Some darker color when you click it */
+}
+
+::-moz-scrollbar-corner
+{
+    background: rgba(135,135,135,.3);
+}
+
 
 iframe,
 object,
@@ -729,7 +765,7 @@ embed
     overflow: hidden;
 
     padding: 10px 0;
-
+    /*margin-bottom: 50px; gap between the rules and the last card*/ 
     text-align: center;
     word-wrap: break-word;
 
@@ -748,7 +784,7 @@ embed
 
     padding-right: 20px;
     padding-left: 10px;
-
+    margin-bottom: -70px;
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -791,7 +827,7 @@ embed
     /*margin-top: 10px;*/
     margin-bottom: -100px;
     padding-left: 0;
-
+    margin-top:20px;
     border-left: none;
     /*width:100%;*/
 }
@@ -826,7 +862,7 @@ embed
     font-size: 12px;
     line-height: 22px;
 
-    float: top;
+    /*float: top;*/
 
     width: 50%;
     margin-top: -65px;
