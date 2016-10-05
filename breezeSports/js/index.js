@@ -130,7 +130,20 @@
                 phone: '+91 8130868769',
                 x: -150,
                 y: 50
-            }, {
+            }, 
+            {
+                name: 'Squash',
+                asset: 'static/volleyball.png',
+                prizeMoney: "I. 8000 <br> II. 4000",
+                eventCoordinator: 'Anav Aggarwal(M)',
+                rules: '<u>Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Each tie will consist of three singles matches.<br>2. Each match would be played as a best of 5 games, each game for 11 points each.<br>3. Every game will be played in accordance with WSF Single’s Rules 2014.<br>4. Squash Shoes and eye protection is mandatory.<br>',       
+                venue: 'Rs 1000',
+                emailID: 'sports.committee@snu.edu.in',
+                phone: '+91 9910117850',
+                x: 0,
+                y: -85   
+            },
+            {
                 name: 'Tennis',
                 asset: 'static/tennis.png',
                 prizeMoney: "   I. 10000 <br> II. 5000",
