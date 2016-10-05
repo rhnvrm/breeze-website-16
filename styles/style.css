@@ -511,7 +511,8 @@ html {
 }
 
 .eventcardcontainer p{
-  font-family: 'Cormorant Garamond', serif !important; 
+  font-family: 'Cormorant Garamond', serif !important;
+  text-align: center; 
 }
 
 
