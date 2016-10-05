@@ -133,7 +133,7 @@
             }, 
             {
                 name: 'Squash',
-                asset: 'static/volleyball.png',
+                asset: 'static/squashNew.png',
                 prizeMoney: "I. 8000 <br> II. 4000",
                 eventCoordinator: 'Anav Aggarwal(M)',
                 rules: '<u>Date : 4.11.16, Friday, 10:00 A.M</u><br>1. Each tie will consist of three singles matches.<br>2. Each match would be played as a best of 5 games, each game for 11 points each.<br>3. Every game will be played in accordance with WSF Single’s Rules 2014.<br>4. Squash Shoes and eye protection is mandatory.<br>',       
